@@ -1,0 +1,1015 @@
+(terminal history limit, gpt-4o is the first model ran anyways)
+=== Model: gpt-4o (openai) | Question 70 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 71 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 72 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 73 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 74 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: gpt-4o (openai) | Question 75 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 76 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 77 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 78 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: gpt-4o (openai) | Question 79 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 80 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 81 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 82 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 83 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 84 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 85 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 86 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 87 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 88 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o (openai) | Question 89 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 90 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 91 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 92 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: gpt-4o (openai) | Question 93 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 94 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 95 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o (openai) | Question 96 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 97 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 98 ===
+Model answer:  | Incorrect ❌ (Correct: B)
+
+=== Model: gpt-4o (openai) | Question 99 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o (openai) | Question 100 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 101 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 102 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 103 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o (openai) | Question 104 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 105 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 106 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 107 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o (openai) | Question 108 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 109 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 110 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 111 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 112 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 113 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: gpt-4o (openai) | Question 114 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 115 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 116 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 117 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 118 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o (openai) | Question 119 ===
+Model answer: D | Correct! ✅
+
+=====================================
+Model: gpt-4o  (engine=openai)
+Result: 100 / 119 correct
+Percentage correct: 84.0%
+Time taken: 00 hours 05 minutes 25 seconds
+Time per Q: 2.7s
+=====================================
+
+=== Model: gpt-4o-mini (openai) | Question 1 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 2 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 3 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 4 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: gpt-4o-mini (openai) | Question 5 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 6 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o-mini (openai) | Question 7 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 8 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 9 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: gpt-4o-mini (openai) | Question 10 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 11 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 12 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 13 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: gpt-4o-mini (openai) | Question 14 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 15 ===
+Model answer: C | Incorrect ❌ (Correct: B)
+
+=== Model: gpt-4o-mini (openai) | Question 16 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 17 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 18 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 19 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 20 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 21 ===
+Model answer: B | Incorrect ❌ (Correct: C)
+
+=== Model: gpt-4o-mini (openai) | Question 22 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 23 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 24 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 25 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: gpt-4o-mini (openai) | Question 26 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: gpt-4o-mini (openai) | Question 27 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 28 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 29 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 30 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: gpt-4o-mini (openai) | Question 31 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 32 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 33 ===
+Model answer: C | Incorrect ❌ (Correct: D)
+
+=== Model: gpt-4o-mini (openai) | Question 34 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 35 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 36 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 37 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 38 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o-mini (openai) | Question 39 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 40 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 41 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 42 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 43 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 44 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 45 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 46 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 47 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 48 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 49 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 50 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 51 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: gpt-4o-mini (openai) | Question 52 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 53 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 54 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 55 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o-mini (openai) | Question 56 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 57 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 58 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 59 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 60 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 61 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 62 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 63 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 64 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: gpt-4o-mini (openai) | Question 65 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: gpt-4o-mini (openai) | Question 66 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 67 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: gpt-4o-mini (openai) | Question 68 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 69 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 70 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 71 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 72 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 73 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 74 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 75 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o-mini (openai) | Question 76 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 77 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 78 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: gpt-4o-mini (openai) | Question 79 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 80 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o-mini (openai) | Question 81 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 82 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 83 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 84 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 85 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 86 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 87 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 88 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o-mini (openai) | Question 89 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 90 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 91 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 92 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: gpt-4o-mini (openai) | Question 93 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 94 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 95 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o-mini (openai) | Question 96 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 97 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 98 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 99 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 100 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 101 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: gpt-4o-mini (openai) | Question 102 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 103 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o-mini (openai) | Question 104 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 105 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 106 ===
+Model answer: C | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 107 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: gpt-4o-mini (openai) | Question 108 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 109 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 110 ===
+Model answer: D | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 111 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 112 ===
+Model answer: B | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 113 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: gpt-4o-mini (openai) | Question 114 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: gpt-4o-mini (openai) | Question 115 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 116 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 117 ===
+Model answer: E | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 118 ===
+Model answer: A | Correct! ✅
+
+=== Model: gpt-4o-mini (openai) | Question 119 ===
+Model answer: D | Correct! ✅
+
+=====================================
+Model: gpt-4o-mini  (engine=openai)
+Result: 92 / 119 correct
+Percentage correct: 77.3%
+Time taken: 00 hours 05 minutes 04 seconds
+Time per Q: 2.6s
+=====================================
+
+=== Model: o1-mini (openai) | Question 1 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 2 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 3 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 4 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 5 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 6 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 7 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 8 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 9 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: o1-mini (openai) | Question 10 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 11 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 12 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 13 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: o1-mini (openai) | Question 14 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 15 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: o1-mini (openai) | Question 16 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 17 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 18 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 19 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 20 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 21 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: o1-mini (openai) | Question 22 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 23 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 24 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 25 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 26 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 27 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 28 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 29 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 30 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 31 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 32 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 33 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 34 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 35 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 36 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 37 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 38 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 39 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: o1-mini (openai) | Question 40 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 41 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 42 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 43 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 44 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 45 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 46 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 47 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 48 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 49 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 50 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 51 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 52 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 53 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 54 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: o1-mini (openai) | Question 55 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: o1-mini (openai) | Question 56 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 57 ===
+Model answer: D | Incorrect ❌ (Correct: C)
+
+=== Model: o1-mini (openai) | Question 58 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: o1-mini (openai) | Question 59 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 60 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 61 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 62 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 63 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 64 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: o1-mini (openai) | Question 65 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 66 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 67 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 68 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 69 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 70 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: o1-mini (openai) | Question 71 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 72 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 73 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 74 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 75 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 76 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 77 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 78 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: o1-mini (openai) | Question 79 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 80 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 81 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 82 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 83 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 84 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 85 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 86 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 87 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 88 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 89 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 90 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 91 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 92 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 93 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 94 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 95 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: o1-mini (openai) | Question 96 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 97 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 98 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 99 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 100 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 101 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 102 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 103 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 104 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 105 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 106 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 107 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 108 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 109 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 110 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 111 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 112 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 113 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: o1-mini (openai) | Question 114 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 115 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 116 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 117 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 118 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-mini (openai) | Question 119 ===
+Model answer: D | Correct! ✅
+
+=====================================
+Model: o1-mini  (engine=openai)
+Result: 105 / 119 correct
+Percentage correct: 88.2%
+Time taken: 00 hours 12 minutes 28 seconds
+Time per Q: 6.3s
+=====================================
+
+=== Model: o1-preview (openai) | Question 1 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 2 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 3 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 4 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 5 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 6 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 7 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 8 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 9 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: o1-preview (openai) | Question 10 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 11 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 12 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 13 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: o1-preview (openai) | Question 14 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 15 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 16 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 17 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 18 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 19 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 20 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 21 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 22 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 23 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 24 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 25 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 26 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 27 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 28 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 29 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 30 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 31 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 32 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 33 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 34 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 35 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 36 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 37 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 38 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 39 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 40 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 41 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 42 ===
+Model answer: A | Correct! ✅
+
