@@ -2385,3 +2385,1119 @@ Model answer: B | Correct! ✅
 
 === Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 13 ===
 Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 14 ===
+Model answer: D | Incorrect ❌ (Correct: C)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 15 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 16 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 17 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 18 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 19 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 20 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 21 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 22 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 23 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 24 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 25 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 26 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 27 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 28 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 29 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 30 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 31 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 32 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 33 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: D)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 34 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 35 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 36 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: C)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 37 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 38 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: E)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 39 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: B)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 40 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 41 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 42 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 43 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 44 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: C)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 45 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 46 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 47 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 48 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 49 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 50 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 51 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 52 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: B)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 53 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 54 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 55 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 56 ===
+Model answer: C | Incorrect ❌ (Correct: D)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 57 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 58 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 59 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 60 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 61 ===
+Model answer: A | Incorrect ❌ (Correct: D)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 62 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 63 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 64 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 65 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 66 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: C)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 67 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: C)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 68 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: C)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 69 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 70 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 71 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 72 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 73 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: A)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 74 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: A)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 75 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: E)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 76 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: C)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 77 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: D)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 78 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: C)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 79 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 80 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: E)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 81 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 82 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 83 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: B)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 84 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 85 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 86 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: A)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 87 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 88 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 89 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 90 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 91 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 92 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 93 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 94 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 95 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 96 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 97 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 98 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 99 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 100 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 101 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 102 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 103 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: E)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 104 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 105 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 106 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 107 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 108 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 109 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 110 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 111 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 112 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: B)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 113 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 114 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 115 ===
+Error connecting to Ollama (model=deepseek-r1:14b-qwen-distill-q4_K_M): HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)
+No response or error from model API.
+Model answer: None | Incorrect ❌ (Correct: E)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 116 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 117 ===
+Model answer: E | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 118 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 119 ===
+Model answer: D | Correct! ✅
+
+=====================================
+Model: deepseek-r1:14b-qwen-distill-q4_K_M  (engine=ollama)
+Result: 77 / 119 correct
+Percentage correct: 64.7%
+Time taken: 03 hours 14 minutes 29 seconds
+Time per Q: 98.1s
+=====================================
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 1 ===
+Model answer: A | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 2 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 3 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 4 ===
+Model answer: B | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 5 ===
+Model answer: C | Incorrect ❌ (Correct: D)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 6 ===
+Model answer: E | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 7 ===
+Model answer: E | Incorrect ❌ (Correct: C)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 8 ===
+Model answer: A | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 9 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 10 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 11 ===
+Model answer: C | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 12 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 13 ===
+Model answer: E | Incorrect ❌ (Correct: F)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 14 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 15 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 16 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 17 ===
+Model answer: E | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 18 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 19 ===
+Model answer: B | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 20 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 21 ===
+Model answer:  | Incorrect ❌ (Correct: C)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 22 ===
+Model answer: A | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 23 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 24 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 25 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 26 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 27 ===
+Model answer: C | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 28 ===
+Model answer: E | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 29 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 30 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 31 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 32 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 33 ===
+Model answer: C | Incorrect ❌ (Correct: D)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 34 ===
+Model answer: B | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 35 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 36 ===
+Model answer: D | Incorrect ❌ (Correct: C)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 37 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 38 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 39 ===
+Model answer: B | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 40 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 41 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 42 ===
+Model answer: A | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 43 ===
+Model answer: C | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 44 ===
+Model answer: C | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 45 ===
+Model answer: C | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 46 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 47 ===
+Model answer: D | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 48 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 49 ===
+Model answer: B | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 50 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 51 ===
+Model answer: A | Incorrect ❌ (Correct: D)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 52 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 53 ===
+Model answer: A | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 54 ===
+Model answer: B | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 55 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 56 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 57 ===
+Model answer: D | Incorrect ❌ (Correct: C)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 58 ===
+Model answer: E | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 59 ===
+Model answer: E | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 60 ===
+Model answer: E | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 61 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 62 ===
+Model answer: A | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 63 ===
+Model answer: C | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 64 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 65 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 66 ===
+Model answer: E | Incorrect ❌ (Correct: C)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 67 ===
+Model answer: D | Incorrect ❌ (Correct: C)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 68 ===
+Model answer: C | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 69 ===
+Model answer: C | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 70 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 71 ===
+Model answer: A | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 72 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 73 ===
+Model answer: A | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 74 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 75 ===
+Model answer: E | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 76 ===
+Model answer: C | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 77 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 78 ===
+Model answer:  | Incorrect ❌ (Correct: C)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 79 ===
+Model answer: A | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 80 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 81 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 82 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 83 ===
+Model answer: C | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 84 ===
+Model answer: B | Incorrect ❌ (Correct: C)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 85 ===
+Model answer: C | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 86 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 87 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 88 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 89 ===
+Model answer: C | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 90 ===
+Model answer: C | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 91 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 92 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 93 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 94 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 95 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 96 ===
+Model answer: B | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 97 ===
+Model answer: B | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 98 ===
+Model answer: B | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 99 ===
+Model answer: E | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 100 ===
+Model answer: E | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 101 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 102 ===
+Model answer: A | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 103 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 104 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 105 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 106 ===
+Model answer: D | Incorrect ❌ (Correct: C)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 107 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 108 ===
+Model answer: B | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 109 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 110 ===
+Model answer: D | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 111 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 112 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 113 ===
+Model answer: E | Incorrect ❌ (Correct: F)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 114 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 115 ===
+Model answer: E | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 116 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 117 ===
+Model answer: E | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 118 ===
+Model answer: A | Correct! ✅
+
+=== Model: openchat:7b-v3.5-1210-q8_0 (ollama) | Question 119 ===
+Model answer: A | Incorrect ❌ (Correct: D)
+
+=====================================
+Model: openchat:7b-v3.5-1210-q8_0  (engine=ollama)
+Result: 57 / 119 correct
+Percentage correct: 47.9%
+Time taken: 00 hours 04 minutes 55 seconds
+Time per Q: 2.5s
+=====================================
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 1 ===
+Model answer: B | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 2 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 3 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 4 ===
+Model answer: A | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 5 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 6 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 7 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 8 ===
+Model answer: D | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 9 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 10 ===
+Model answer: A | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 11 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 12 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 13 ===
+Model answer: A | Incorrect ❌ (Correct: F)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 14 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 15 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 16 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 17 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 18 ===
+Model answer: A | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 19 ===
+Model answer: B | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 20 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 21 ===
+Model answer:  | Incorrect ❌ (Correct: C)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 22 ===
+Model answer: A | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 23 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 24 ===
+Model answer: B | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 25 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 26 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 27 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 28 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 29 ===
+Model answer: B | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 30 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 31 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 32 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 33 ===
+Model answer: C | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 34 ===
+Model answer: A | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 35 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 36 ===
+Model answer: E | Incorrect ❌ (Correct: C)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 37 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 38 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 39 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 40 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 41 ===
+Model answer: B | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 42 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 43 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 44 ===
+Model answer:  | Incorrect ❌ (Correct: C)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 45 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 46 ===
+Model answer: C | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 47 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 48 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 49 ===
+Model answer: B | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 50 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 51 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 52 ===
+Model answer: B | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 53 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 54 ===
+Model answer: B | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 55 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 56 ===
+Model answer: A | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 57 ===
+Model answer: B | Incorrect ❌ (Correct: C)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 58 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 59 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 60 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 61 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 62 ===
+Model answer: A | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 63 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 64 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 65 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 66 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 67 ===
+Model answer: B | Incorrect ❌ (Correct: C)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 68 ===
+Model answer: D | Incorrect ❌ (Correct: C)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 69 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 70 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 71 ===
+Model answer: A | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 72 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 73 ===
+Model answer: A | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 74 ===
+Model answer: A | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 75 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 76 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 77 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 78 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 79 ===
+Model answer: D | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 80 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 81 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 82 ===
+Model answer: A | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 83 ===
+Model answer: C | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 84 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 85 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 86 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 87 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 88 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 89 ===
+Model answer: B | Incorrect ❌ (Correct: C)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 90 ===
+Model answer: B | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 91 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 92 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 93 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 94 ===
+Model answer: A | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 95 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 96 ===
+Model answer: B | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 97 ===
+Model answer: B | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 98 ===
+Model answer:  | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 99 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 100 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 101 ===
+Model answer: A | Incorrect ❌ (Correct: D)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 102 ===
+Model answer: A | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 103 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 104 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 105 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 106 ===
+Model answer: C | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 107 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 108 ===
+Model answer: B | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 109 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 110 ===
+Model answer: D | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 111 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 112 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 113 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 114 ===
+Model answer: B | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 115 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 116 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 117 ===
+Model answer: E | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 118 ===
+Model answer: A | Correct! ✅
+
+=== Model: llama3.1:8b-instruct-q8_0 (ollama) | Question 119 ===
+Model answer: D | Correct! ✅
+
+=====================================
+Model: llama3.1:8b-instruct-q8_0  (engine=ollama)
+Result: 60 / 119 correct
+Percentage correct: 50.4%
+Time taken: 00 hours 06 minutes 42 seconds
+Time per Q: 3.4s
+=====================================
+
+
+===================== 2024 STEP-SAMPLE TEST RANKING SUMMARY =====================
+Model Name                                         Engine   | %Corr  |  Corr/Total  | Time to Complete     | Time per Q
+--------------------------------------------------------------------------------------------------------------
+o1-preview                                         openai   |  89.9% |  107/119  | 00 hours 22 minutes 15 seconds | 11.2s
+o1-mini                                            openai   |  88.2% |  105/119  | 00 hours 12 minutes 28 seconds | 6.3s
+claude-3-5-sonnet-20241022                         claude   |  86.6% |  103/119  | 00 hours 11 minutes 30 seconds | 5.8s
+gpt-4o                                             openai   |  84.0% |  100/119  | 00 hours 05 minutes 25 seconds | 2.7s
+gpt-4o-mini                                        openai   |  77.3% |  92/119  | 00 hours 05 minutes 04 seconds | 2.6s
+claude-3-opus-latest                               claude   |  73.9% |  88/119  | 00 hours 08 minutes 44 seconds | 4.4s
+claude-3-5-haiku-latest                            claude   |  71.4% |  85/119  | 00 hours 14 minutes 37 seconds | 7.4s
+deepseek-r1:14b-qwen-distill-q4_K_M                ollama   |  64.7% |  77/119  | 03 hours 14 minutes 29 seconds | 98.1s
+llama3.1:8b-instruct-q8_0                          ollama   |  50.4% |  60/119  | 00 hours 06 minutes 42 seconds | 3.4s
+openchat:7b-v3.5-1210-q8_0                         ollama   |  47.9% |  57/119  | 00 hours 04 minutes 55 seconds | 2.5s
+==============================================================================================================
+
+
