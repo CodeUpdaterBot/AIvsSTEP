@@ -1371,3 +1371,1017 @@ Model answer: D | Incorrect ❌ (Correct: B)
 
 === Model: claude-3-5-haiku-latest (claude) | Question 40 ===
 Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 41 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 42 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 43 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 44 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 45 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 46 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 47 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 48 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 49 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 50 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 51 ===
+Model answer: A | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 52 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 53 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 54 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 55 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 56 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 57 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 58 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 59 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 60 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 61 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 62 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 63 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 64 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 65 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 66 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 67 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 68 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 69 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 70 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 71 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 72 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 73 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 74 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 75 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 76 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 77 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 78 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 79 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 80 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 81 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 82 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 83 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 84 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 85 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 86 ===
+Model answer: D | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 87 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 88 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 89 ===
+Model answer: E | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 90 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 91 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 92 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 93 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 94 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 95 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 96 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 97 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 98 ===
+Model answer:  | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 99 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 100 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 101 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 102 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 103 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 104 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 105 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 106 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 107 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 108 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 109 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 110 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 111 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 112 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 113 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 114 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 115 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 116 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 117 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 118 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 119 ===
+Model answer: D | Correct! ✅
+
+=====================================
+Model: claude-3-5-haiku-latest  (engine=claude)
+Result: 85 / 119 correct
+Percentage correct: 71.4%
+Time taken: 00 hours 14 minutes 37 seconds
+Time per Q: 7.4s
+=====================================
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 1 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 2 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 3 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 4 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 5 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 6 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 7 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 8 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 9 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 10 ===
+Model answer:  | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 11 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 12 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 13 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 14 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 15 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 16 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 17 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 18 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 19 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 20 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 21 ===
+Model answer:  | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 22 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 23 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 24 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 25 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 26 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 27 ===
+Model answer: B | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 28 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 29 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 30 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 31 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 32 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 33 ===
+Model answer: C | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 34 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 35 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 36 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 37 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 38 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 39 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 40 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 41 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 42 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 43 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 44 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 45 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 46 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 47 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 48 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 49 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 50 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 51 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 52 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 53 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 54 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 55 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 56 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 57 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 58 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 59 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 60 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 61 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 62 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 63 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 64 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 65 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 66 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 67 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 68 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 69 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 70 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 71 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 72 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 73 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 74 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 75 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 76 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 77 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 78 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 79 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 80 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 81 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 82 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 83 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 84 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 85 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 86 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 87 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 88 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 89 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 90 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 91 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 92 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 93 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 94 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 95 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 96 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 97 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 98 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 99 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 100 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 101 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 102 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 103 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 104 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 105 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 106 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 107 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 108 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 109 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 110 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 111 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 112 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 113 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 114 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 115 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 116 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 117 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 118 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-sonnet-20241022 (claude) | Question 119 ===
+Model answer: C | Incorrect ❌ (Correct: D)
+
+=====================================
+Model: claude-3-5-sonnet-20241022  (engine=claude)
+Result: 103 / 119 correct
+Percentage correct: 86.6%
+Time taken: 00 hours 11 minutes 30 seconds
+Time per Q: 5.8s
+=====================================
+
+=== Model: claude-3-opus-latest (claude) | Question 1 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 2 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 3 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 4 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-opus-latest (claude) | Question 5 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 6 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 7 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 8 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 9 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 10 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 11 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 12 ===
+Model answer:  | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-opus-latest (claude) | Question 13 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: claude-3-opus-latest (claude) | Question 14 ===
+Model answer: E | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-opus-latest (claude) | Question 15 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-opus-latest (claude) | Question 16 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 17 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 18 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 19 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 20 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 21 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-opus-latest (claude) | Question 22 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 23 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 24 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 25 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 26 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-opus-latest (claude) | Question 27 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 28 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 29 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 30 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 31 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 32 ===
+Model answer: C | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-opus-latest (claude) | Question 33 ===
+Model answer: C | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-opus-latest (claude) | Question 34 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 35 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 36 ===
+Model answer: E | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-opus-latest (claude) | Question 37 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 38 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 39 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 40 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 41 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 42 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 43 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 44 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 45 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 46 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 47 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 48 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 49 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 50 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 51 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-opus-latest (claude) | Question 52 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 53 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-opus-latest (claude) | Question 54 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 55 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 56 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 57 ===
+Model answer: D | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-opus-latest (claude) | Question 58 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 59 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 60 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 61 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 62 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 63 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 64 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 65 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 66 ===
+Model answer: E | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-opus-latest (claude) | Question 67 ===
+Model answer: E | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-opus-latest (claude) | Question 68 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 69 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 70 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 71 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 72 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-opus-latest (claude) | Question 73 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 74 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 75 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 76 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 77 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 78 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 79 ===
+Model answer: B | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-opus-latest (claude) | Question 80 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 81 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 82 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 83 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-opus-latest (claude) | Question 84 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 85 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 86 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-opus-latest (claude) | Question 87 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 88 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 89 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 90 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-opus-latest (claude) | Question 91 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 92 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-opus-latest (claude) | Question 93 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 94 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 95 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-opus-latest (claude) | Question 96 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 97 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 98 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 99 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 100 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 101 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-opus-latest (claude) | Question 102 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 103 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-opus-latest (claude) | Question 104 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-opus-latest (claude) | Question 105 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-opus-latest (claude) | Question 106 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 107 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: claude-3-opus-latest (claude) | Question 108 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 109 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 110 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 111 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 112 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 113 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: claude-3-opus-latest (claude) | Question 114 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-opus-latest (claude) | Question 115 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 116 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-opus-latest (claude) | Question 117 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 118 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-opus-latest (claude) | Question 119 ===
+Model answer: C | Incorrect ❌ (Correct: D)
+
+=====================================
+Model: claude-3-opus-latest  (engine=claude)
+Result: 88 / 119 correct
+Percentage correct: 73.9%
+Time taken: 00 hours 08 minutes 44 seconds
+Time per Q: 4.4s
+=====================================
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 1 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 2 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 3 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 4 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 5 ===
+Model answer: D | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 6 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 7 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 8 ===
+Model answer: A | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 9 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 10 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 11 ===
+Model answer: C | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 12 ===
+Model answer: B | Correct! ✅
+
+=== Model: deepseek-r1:14b-qwen-distill-q4_K_M (ollama) | Question 13 ===
+Model answer:  | Incorrect ❌ (Correct: F)
