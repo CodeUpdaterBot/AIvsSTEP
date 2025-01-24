@@ -21,7 +21,7 @@ Choose which models to use (line 2745):
         {"model_name": "openchat:7b-v3.5-1210-q8_0", "engine": "ollama"},
         {"model_name": "llama3.1:8b-instruct-q8_0", "engine": "ollama"}
 
-Run with: python main.py
+Run with: python main.py (see imports at top, you might have to pip install a library like 'pip install anthropic')
 
 **To use ChatGPT/OpenAI:** You must set the client.api_key to your OpenAI API Key
 
