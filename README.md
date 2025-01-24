@@ -2,6 +2,8 @@
 A Python program that uses ****only the text**** from the the 2024 STEP-Practice Exam and runs it through OpenAI, Claude, and open-source Ollama models to see how each scores and which is the best overall.
 - Practice STEP: https://www.usmle.org/sites/default/files/2021-10/Step_1_Sample_Items.pdf
 
+![image](https://github.com/user-attachments/assets/fa5cde1d-3c89-4f77-8ade-6cb448eede32)
+
 
 Choose which models to use (line 2745):
 
