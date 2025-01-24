@@ -5,13 +5,6 @@ import os
 import anthropic
 import time
 
-# Below is an example of how you could store questions 1–50 in a Python list of dictionaries.
-# Each entry includes:
-#   question_number: The question index (1 to 50).
-#   question: The full text of the question stem.
-#   choices: A dictionary of the multiple-choice options.
-#   correct_answer: The letter of the correct answer.
-
 practice_test_questions = [
     {
         "question_number": 1,
@@ -2487,7 +2480,7 @@ practice_test_questions = [
 ]
 
 ### ### ###
-practice_test_questions = practice_test_questions[:2] #limit to 5 to speed up testing & make sure everything works
+#practice_test_questions = practice_test_questions[:2] #limit to 5 to speed up testing & make sure everything works
 #practice_test_questions = practice_test_questions[:50] #limit to 50
 
 
@@ -2496,7 +2489,6 @@ def call_ollama(prompt: str, model_name: str) -> str:
     Sends the prompt to the Ollama API endpoint using the specified model
     and returns the text from the 'response' field in the JSON object.
     This uses a non-streaming request so we get a single JSON payload.
-    Timeout is increased to 180 seconds.
     """
     url = "http://localhost:11434/api/generate"
 
@@ -2628,12 +2620,6 @@ def test_single_model(model_info: dict):
     Runs the practice test on a single model, returning:
       (correct_count, total_questions, percentage_correct, time_taken)
     Also prints the step-by-step results.
-
-    model_info is a dict with:
-      {
-        "model_name": "xxx",
-        "engine": "ollama" or "openai"
-      }
     """
     model_name = model_info["model_name"]
     engine = model_info.get("engine", "ollama")
