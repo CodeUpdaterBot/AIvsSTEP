@@ -14,7 +14,7 @@ Choode which models to use (line 1229):
 
         # Ollama models:
         {"model_name": "deepseek-r1:8b-llama-distill-q8_0", "engine": "ollama"},
-        #{"model_name": "deepseek-r1:7b-qwen-distill-q8_0", "engine": "ollama"}, #performed poorly
+        #{"model_name": "deepseek-r1:7b-qwen-distill-q8_0", "engine": "ollama"}, #performed poorly, comment out to disable
         {"model_name": "deepseek-r1:14b-qwen-distill-q4_K_M", "engine": "ollama"},
         {"model_name": "openchat:7b-v3.5-1210-q8_0", "engine": "ollama"},
         {"model_name": "llama3.1:8b-instruct-q8_0", "engine": "ollama"}
