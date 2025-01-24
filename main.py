@@ -2,6 +2,8 @@ import requests
 import re
 from openai import OpenAI
 import os
+import anthropic
+import time
 
 # Below is an example of how you could store questions 1–50 in a Python list of dictionaries.
 # Each entry includes:
@@ -1024,10 +1026,1469 @@ practice_test_questions = [
         },
         "correct_answer": "D"
     },
+    {
+        "question_number": 51,
+        "question": (
+            "A 37-year-old man comes to the office because of a 3-week history of itchy patches of skin and a "
+            "burning sensation in his feet. He works as a dishwasher and says he frequently works in wet shoes "
+            "and socks. Vital signs are within normal limits. Physical examination shows the findings in the "
+            "photograph; these findings are also present on the soles of both feet. The most appropriate "
+            "pharmacotherapy for this patient will inhibit the activity of which of the following enzymes?"
+        ),
+        "choices": {
+            "A": "Chitin synthase",
+            "B": "1,3-β-D-Glucan synthase complex",
+            "C": "Phospholipase D",
+            "D": "Squalene monooxygenase",
+            "E": "Thymidylate synthase"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 52,
+        "question": (
+            "A 10-year-old boy is brought to the emergency department in the middle of summer because of fever, "
+            "headache, and photophobia. Several of his camp mates have had a similar illness. Physical "
+            "examination shows mild nuchal rigidity. A lumbar puncture is performed. Laboratory studies show:\n\n"
+            "Serum glucose 90 mg/dL\n\n"
+            "Cerebrospinal fluid\nPressure, opening 50 mm H2O\nGlucose 65 mg/dL\nTotal protein 70 mg/dL\n"
+            "Leukocyte count 43/mm3 (95% lymphocytes)\n\n"
+            "Which of the following infectious agents is the most likely cause of these findings?"
+        ),
+        "choices": {
+            "A": "Adenovirus",
+            "B": "Enterovirus",
+            "C": "Herpes simplex virus",
+            "D": "Neisseria meningitidis",
+            "E": "Streptococcus pneumoniae"
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 53,
+        "question": (
+            "A 55-year-old woman comes to the physician because of a 3-week history of right shoulder pain that "
+            "occurs when she is lying on her right shoulder in bed. There is tenderness to palpation over the "
+            "greater tubercle. An x-ray of the right shoulder is shown; the arrows indicate a calcium deposit. "
+            "Further examination of this patient will most likely show impairment of which of the following "
+            "active shoulder movements?"
+        ),
+        "choices": {
+            "A": "Abduction",
+            "B": "Adduction",
+            "C": "External rotation",
+            "D": "Flexion",
+            "E": "Internal rotation"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 54,
+        "question": (
+            "A 31-year-old woman with a 5-year history of fatigue comes to the physician for an initial visit. "
+            "She has seen four other physicians for the same condition within the past 6 months, but no "
+            "abnormalities were found. She gives the physician a large folder that contains her medical records. "
+            'She says, "I can barely get out of bed most mornings, but nobody can figure out why because all of '
+            'my tests turn out normal. I really think I have chronic fatigue syndrome. What do you know about '
+            'this condition?" The physician has not treated any patient with chronic fatigue syndrome before. '
+            "Which of the following initial statements by the physician is most appropriate to establish "
+            "rapport with this patient?"
+        ),
+        "choices": {
+            "A": (
+                "\"From the size of the folder you brought, it looks like you've had very thorough examinations "
+                "in the past.\""
+            ),
+            "B": (
+                "\"I don't have much experience with chronic fatigue syndrome, but I'm committed to learning "
+                "as much as I can about it.\""
+            ),
+            "C": (
+                "\"I'm not familiar with chronic fatigue syndrome, except that many physicians don't think "
+                "it's a real disease.\""
+            ),
+            "D": (
+                "\"Let's start over from scratch. We'll need to repeat complete testing.\""
+            ),
+            "E": (
+                "\"When nothing abnormal is found during thorough examinations and laboratory studies, there "
+                "is often an underlying psychological cause of the symptoms.\""
+            )
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 55,
+        "question": (
+            "A 28-year-old man comes to the physician because of a 2-month history of a rash on his wrists and hands. "
+            "He is a first-year mortuary science student. He also works on his grandfather's farm each weekend. "
+            "His hobbies include raising homing pigeons and repairing vintage motorcycles. He recently changed "
+            "to a different type of laundry detergent to save money. Physical examination shows a diffuse "
+            "erythematous rash involving both hands up to the wrist creases. The rash does not extend over any "
+            "other parts of the body. Which of the following is the most likely cause of this patient's rash?"
+        ),
+        "choices": {
+            "A": "Change in laundry detergent",
+            "B": "Exposure to chemicals during motorcycle repair",
+            "C": "Handling pigeons",
+            "D": "Pesticide exposure",
+            "E": "Use of latex gloves"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 56,
+        "question": (
+            "A 22-year-old woman at 32 weeks’ gestation comes to the office for a prenatal visit. Vital signs are "
+            "within normal limits. Fundal height and fetal heart tones are also normal. At the end of the "
+            "examination, the patient tells the physician that her friend is a certified lay midwife and has "
+            "recently convinced her to have a home birth. The patient asks the physician if he would be the "
+            "backup for the midwife in case of an emergency. Which of the following is the most appropriate "
+            "initial response by the physician?"
+        ),
+        "choices": {
+            "A": (
+                "“I’m sorry, but I would no longer be able to be your doctor if you pursue a home birth.”"
+            ),
+            "B": (
+                "“I would like to meet with your friend before I decide.”"
+            ),
+            "C": (
+                "“If there’s a problem, I could still act as your doctor if you arrive at the hospital in labor.”"
+            ),
+            "D": (
+                "“Let’s set up an appointment next week to discuss your birth plan in detail.”"
+            ),
+            "E": (
+                "“Perhaps your midwife could act as your birth coach instead.”"
+            )
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 57,
+        "question": (
+            "A 36-year-old woman with hypertension comes to the office because she thinks she may be “going through "
+            "early menopause.” She has not had a menstrual period since her most recent office visit 6 months ago. "
+            "During this time, she also has been “gaining weight around the middle” despite increased exercise; "
+            "she has had a 6.3-kg (14-lb) weight gain. She has no other history of major medical illness. Her "
+            "only medication is lisinopril. She does not smoke, drink alcohol, or use illicit drugs. She is 168 cm "
+            "(5 ft 6 in) tall and weighs 107 kg (236 lb); BMI is 38 kg/m2. Vital signs are within normal limits. "
+            "Examination shows a uterus consistent in size with a 24-week gestation. Pelvic ultrasonography shows "
+            "oligohydramnios and a fetus with a misshapen cranium, pericardial effusion, small bladder, and "
+            "echogenic bowel. The most likely cause of the fetal abnormalities in this patient’s pregnancy is "
+            "interference with which of the following?"
+        ),
+        "choices": {
+            "A": "Fetal lung/epithelial differentiation",
+            "B": "Fetal lung/surfactant development",
+            "C": "Fetal renal hemodynamics",
+            "D": "Maternal placental perfusion",
+            "E": "Maternal prostaglandin synthesis"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 58,
+        "question": (
+            "A 67-year-old man comes to the office because he is concerned about memory loss. He says he sometimes "
+            "forgets the names of acquaintances he sees while he is out shopping. He also has occasional word-finding "
+            "difficulty and forgets to buy some items when he goes shopping unless he makes a list. He lives alone "
+            "and is able to manage his finances, cook, and shop without help. He works part-time as an accountant. "
+            "He has gastroesophageal reflux disease and hypertension. Current medications are hydrochlorothiazide "
+            "and omeprazole. Vital signs are within normal limits. Physical and neurologic examinations show no "
+            "abnormalities. On mental status examination, he is fully oriented. His speech is normal, and thoughts "
+            "are organized. His mood is euthymic, and he has a full range of affect. His concentration is intact, "
+            "and he is able to perform calculations quickly and accurately. He can name objects accurately and "
+            "follow written and verbal commands. He recalls three of four objects after 5 minutes. Which of the "
+            "following is the most appropriate physician response to this patient’s concern?"
+        ),
+        "choices": {
+            "A": (
+                "“I am concerned about your memory loss. Let’s discuss how to further evaluate your memory.”"
+            ),
+            "B": (
+                "“There's no need to worry right now, but let's meet again in 6 months.”"
+            ),
+            "C": (
+                "“Unfortunately, your memory loss will likely increase significantly during the next 5 years; let’s "
+                "discuss some ways to plan for the future.”"
+            ),
+            "D": (
+                "“Your episodes of forgetfulness are likely just ‘Senior Moments,’ but we should obtain in-depth "
+                "laboratory test results and an MRI to be certain.”"
+            ),
+            "E": (
+                "“Your examination findings indicate that your memory loss is likely consistent with the normal "
+                "aging process.”"
+            )
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 59,
+        "question": (
+            "A 42-year-old woman comes to the office because of a 1-year history of a left breast mass. She had been "
+            "living in another country for the past 2 years; a physician in that country told her that the lesion "
+            "was a cyst. Since returning to the USA 12 weeks ago, she has noticed that the mass has increased in "
+            "size and is now so tender that any physical contact is painful. She has not had any other breast "
+            "masses, skin changes, or nipple changes. She has a history of cysts in both breasts, and has undergone "
+            "aspirations of 2 prior cysts; pathologic examination both times showed no abnormalities. She has a "
+            "1-year history of yellow nipple discharge from both breasts and premenstrual bilateral breast pain. "
+            "She has no other history of serious illness and takes no medications. There is no family history of "
+            "breast cancer. Vital signs are within normal limits. Physical examination shows a 3-cm, firm, "
+            "extremely tender and partially mobile mass in the upper outer quadrant of the left breast. "
+            "Mammography shows a 3.1-cm, irregular mass in the left breast corresponding to the palpable area "
+            "of the mass. Photomicrographs of an excisional biopsy specimen are shown. Which of the following "
+            "pathologic findings most strongly suggests malignancy in this patient?"
+        ),
+        "choices": {
+            "A": "Compressed ducts",
+            "B": "Dense fibrosis",
+            "C": "Expanded ducts",
+            "D": "Multiple large and small cysts",
+            "E": "Pleomorphic irregular glands"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 60,
+        "question": (
+            "A 30-year-old woman comes to the office because of a 4-day history of an increasingly severe, painful "
+            "rash over her body and in her mouth. The rash began over her trunk area but spread within a day to "
+            "her face and extremities. Two days before development of the rash, she had flu-like symptoms with "
+            "muscle aches and fatigue as well as a nonproductive cough, sore throat, and runny nose. Ten days ago, "
+            "she began treatment with trimethoprim-sulfamethoxazole for a urinary tract infection; she takes no "
+            "other medications. Temperature is 39.0°C (102.2°F), pulse is 120/min, respirations are 25/min, and "
+            "blood pressure is 165/105 mm Hg. Physical examination shows diffuse brownish red macular exanthema "
+            "with bullous lesions. Epidermis at an uninvolved site can be removed with mild tangential pressure. "
+            "Examination of a biopsy specimen of one of the lesions shows necrosis of keratinocytes throughout the "
+            "epidermis. There is minimal lymphocytic infiltration within the superficial dermis. Which of the "
+            "following is the most likely diagnosis?"
+        ),
+        "choices": {
+            "A": "Erythema multiforme",
+            "B": "Linear IgA bullous dermatosis",
+            "C": "Pemphigus vulgaris",
+            "D": "Staphylococcal scalded skin syndrome",
+            "E": "Toxic epidermal necrolysis"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 61,
+        "question": (
+            "A 78-year-old woman is admitted to the hospital because of a 1-week history of jaundice. CT scan of the "
+            "abdomen shows a mass suggestive of pancreatic cancer. Three hours later, the on-call physician enters "
+            "the patient's room to discuss the prognosis and obtain consent for a biopsy scheduled for the next "
+            "morning. On entering the room, the physician greets the patient and her husband. The physician then "
+            "learns that the patient speaks only Mandarin. Her husband is fluent in Mandarin and English. The "
+            "hospital interpreter is not available until tomorrow morning. The patient's husband appears anxious "
+            "and insists that the physician speaks to him and allows him to serve as an interpreter for his wife. "
+            "Which of the following is the most appropriate next step in management?"
+        ),
+        "choices": {
+            "A": "Allow the patient's husband to serve as an interpreter",
+            "B": "Consult the hospital ethics committee",
+            "C": (
+                "Explain to the husband that information cannot be provided until the hospital interpreter "
+                "arrives in the morning"
+            ),
+            "D": "Use a telephone interpreter service"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 62,
+        "question": (
+            "Results of a study that examined the impact of risk factors on cardiovascular health are being evaluated. "
+            "In the study, serum LDL-cholesterol (LDL) concentration is found to have a correlation of 0.6 with "
+            "serum high-sensitivity C-reactive protein (hs-CRP) concentration. Which of the following statements "
+            "best describes the relationship between LDL concentration and hs-CRP concentration based on this "
+            "finding?"
+        ),
+        "choices": {
+            "A": "Higher LDL concentrations are associated with higher hs-CRP concentrations",
+            "B": "Higher LDL concentrations are associated with lower hs-CRP concentrations",
+            "C": "Higher LDL concentrations cause higher hs-CRP concentrations",
+            "D": "Higher LDL concentrations cause lower hs-CRP concentrations"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 63,
+        "question": (
+            "A 45-year-old man comes to the physician because of a 10-year history of heartburn that occurs after he "
+            "eats late at night or consumes spicy food. He has had no weight loss or difficulty swallowing. He takes "
+            "over-the-counter antacids as needed, but they relieve his discomfort only temporarily. Physical "
+            "examination shows no abnormalities. An endoscopy is done. The distal esophagus is shown in the "
+            "photograph. Which of the following is the most likely cause of this patient's symptoms?"
+        ),
+        "choices": {
+            "A": "Defect in secretin production",
+            "B": "Excessive gastrin production",
+            "C": "Excessive transient lower esophageal relaxations",
+            "D": "Failure of primary esophageal peristalsis",
+            "E": "Failure of saliva production"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 64,
+        "question": (
+            "A 72-year-old man comes to the physician for a health maintenance examination. He has no personal or "
+            "family history of major medical illnesses. He has never smoked cigarettes. Pulse oximetry on room air "
+            "shows an oxygen saturation of 98%. Physical examination shows plethoric skin and splenomegaly. "
+            "Laboratory studies show:\n\n"
+            "Hemoglobin 21.1 g/dL\nHematocrit 61%\nLeukocyte count 15,000/mm3\nSegmented neutrophils 68%\n"
+            "Basophils 4%\nLymphocytes 28%\nPlatelet count 501,000/mm3\nLeukocyte alkaline phosphatase increased\n\n"
+            "A peripheral blood smear shows occasional giant platelets. The primary hematologic defect in this "
+            "patient most likely occurred in which of the following cells?"
+        ),
+        "choices": {
+            "A": "Erythroid progenitor",
+            "B": "Hematopoietic stem",
+            "C": "Lymphatic progenitor",
+            "D": "Megakaryocyte progenitor",
+            "E": "Pluripotent stem"
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 65,
+        "question": (
+            "A 35-year-old man is brought to the emergency department 30 minutes after he sustained a cut on his hand "
+            "while loading cargo at his job. He lives alone and takes most of his meals at a local restaurant. He "
+            "eats mostly snack foods at the bar and fast food. He drinks four to six 12-oz beers daily and double "
+            "that amount on weekends. He takes no medications. Physical examination shows a 3-cm laceration on "
+            "the right hand that is bleeding steadily. Laboratory studies show a hemoglobin concentration of "
+            "11 g/dL, leukocyte count of 4000/mm3, and platelet count of 150,000/mm3. A photomicrograph of a "
+            "peripheral blood smear is shown. A deficiency of which of the following is the most likely cause of "
+            "this patient's anemia?"
+        ),
+        "choices": {
+            "A": "Folic acid",
+            "B": "Glucose-6-phosphate dehydrogenase",
+            "C": "Iron",
+            "D": "Vitamin B1 (thiamine)",
+            "E": "Vitamin B6 (pyridoxine)"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 66,
+        "question": (
+            "A 3800-g (8-lb 6-oz) newborn is delivered vaginally at 39 weeks' gestation after an uncomplicated "
+            "pregnancy. Apgar scores are 9 and 9 at 1 and 5 minutes, respectively. The newborn is crying, has pink "
+            "skin, and appears vigorous. Physical examination shows a vagina and also a structure that appears to "
+            "be a penis, with the urethra located at the base near the opening of the vagina. Chromosomal analysis "
+            "is ordered. Which of the following is the most likely cause of the intersex findings in this newborn "
+            "if the karyotype is found to be 46,XX?"
+        ),
+        "choices": {
+            "A": "17α-Hydroxyprogesterone deficiency",
+            "B": "Increased concentration of müllerian-inhibiting substance",
+            "C": "Maternal androgen exposure",
+            "D": "Presence of the sex-determining region Y gene",
+            "E": "5α-Reductase deficiency"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 67,
+        "question": (
+            "An 80-year-old woman is brought to the emergency department (ED) 30 minutes after she fell out of her "
+            "wheelchair at home. This is the second visit to the ED for a fall during the past 3 months. She lives "
+            "with her daughter and son-in-law, who say they “do the best we can.” The patient has dementia, "
+            "Alzheimer type, coronary artery disease, type 2 diabetes mellitus, and hypertension. Current "
+            "medications are amlodipine, aspirin, atorvastatin, donepezil, long-acting insulin, and lisinopril. "
+            "Five years ago, she underwent bilateral below-the-knee amputations because of infected ulcers of the "
+            "feet. She uses a wheelchair for ambulation. Ten years ago, she underwent three-vessel coronary artery "
+            "bypass grafting. She has smoked one-half pack of cigarettes daily for 60 years. She drinks one shot "
+            "of whiskey nightly. She is thin and appears ill and disheveled. Her temperature is 37.2°C (99.0°F), "
+            "pulse is 80/min, respirations are 20/min, and blood pressure is 120/80 mm Hg. Pulse oximetry on 2 L/min "
+            "of oxygen by nasal cannula shows an oxygen saturation of 95%. Physical examination shows temporal "
+            "wasting. There are scattered ecchymoses over the abdomen and all extremities. No other abnormalities "
+            "are noted. Which of the following is the most appropriate initial history to obtain from this patient?"
+        ),
+        "choices": {
+            "A": "Abnormal bleeding",
+            "B": "Diet",
+            "C": "Relationship with her family",
+            "D": "Respiratory symptoms",
+            "E": "Urinary symptoms"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 68,
+        "question": (
+            "A healthy 26-year-old man with red-green color blindness marries a woman whose father also has red-green "
+            "color blindness. A pedigree is shown. Which of the following best predicts the risk that a son of this "
+            "couple will be affected?"
+        ),
+        "choices": {
+            "A": "0%",
+            "B": "25%",
+            "C": "50%",
+            "D": "75%",
+            "E": "100%"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 69,
+        "question": (
+            "A 25-year-old woman comes to the physician because of a long history of pain with menses. The pain occurs "
+            "on the first day of her 5-day menstrual period and lasts all day. She rates the pain as 10 on a "
+            "10-point scale. The most appropriate initial pharmacotherapy to relieve this patient's pain has "
+            "which of the following mechanisms of action?"
+        ),
+        "choices": {
+            "A": "Inhibition of estrogen synthesis",
+            "B": "Inhibition of 11β-hydroxylase activity",
+            "C": "Inhibition of prostaglandin synthesis",
+            "D": "Stimulation of follicle-stimulating hormone synthesis",
+            "E": "Stimulation of luteinizing hormone synthesis"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 70,
+        "question": (
+            "A 56-year-old woman comes to the physician because of a 2-year history of recurrent urinary tract "
+            "infections accompanied by left flank pain. Physical examination shows no abnormalities. Renal "
+            "ultrasonography shows left-sided hydronephrosis. A T2-weighted coronal MRI of the abdomen is shown; "
+            "the arrow indicates the hydronephrosis. The left renal collecting system is most likely obstructed "
+            "at which of the following anatomic locations in this patient?"
+        ),
+        "choices": {
+            "A": "Bladder neck",
+            "B": "Mid ureter",
+            "C": "Renal calyx",
+            "D": "Ureteropelvic junction",
+            "E": "Ureterovesical junction"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 71,
+        "question": (
+            "A randomized clinical trial is conducted to compare wound healing and cosmetic differences between two "
+            "surgical procedures for closing skin wounds following cesarean delivery. A total of 1000 women "
+            "undergoing cesarean delivery during a 6-month period are enrolled in the study, which was 85% of the "
+            "total number of patients undergoing the procedure. The results show a wound infection rate of 12 "
+            "cases per 1000 women for Procedure A and 18 cases per 1000 women for Procedure B. Which of the "
+            "following is the best estimate of the absolute risk reduction for wound infection following Procedure "
+            "A compared with Procedure B?"
+        ),
+        "choices": {
+            "A": "(18/1000) – (12/1000)",
+            "B": "0.85 × (12/1000)",
+            "C": "0.85 × (18/1000)",
+            "D": "[0.85 × (18/1000–12/1000)]",
+            "E": "[(1.2/100) – (1.8/100)]/(1.8/100)"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 72,
+        "question": (
+            "A 52-year-old man is admitted to the hospital because of a 2-hour history of vomiting bright red blood. "
+            "His pulse is 125/min, and blood pressure is 90/60 mm Hg. Physical examination shows jaundice and "
+            "visible blood vessels surrounding the umbilicus. CT scans of the abdomen are shown. To decrease "
+            "portal venous pressure in this patient, it is most appropriate to place a shunt between the portal "
+            "vein and which of the following additional vessels?"
+        ),
+        "choices": {
+            "A": "Inferior mesenteric vein",
+            "B": "Inferior vena cava",
+            "C": "Left gastric vein",
+            "D": "Splenic vein",
+            "E": "Superior mesenteric vein"
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 73,
+        "question": (
+            "A 58-year-old man with chronic obstructive pulmonary disease comes to the clinic with his wife for a "
+            "follow-up examination. He has smoked one pack of cigarettes daily for 35 years. He has tried to quit "
+            "smoking twice but was unsuccessful both times. At today’s visit, when the physician asks the patient "
+            "about smoking cessation, he says he is not ready to do so. The patient’s wife states her husband’s "
+            "smoking makes her cough and gives her chest tightness. Which of the following is the most appropriate "
+            "physician statement?"
+        ),
+        "choices": {
+            "A": "\"Are there any reasons why you might want to quit smoking?\"",
+            "B": "\"Are you aware that your lung condition is chronic at this point?\"",
+            "C": "\"I'm sure you don't want your wife to suffer as a result of your smoking.\"",
+            "D": "\"The majority of your health issues would improve if you quit smoking.\"",
+            "E": "\"Why haven't you been able to stay off cigarettes?\""
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 74,
+        "question": (
+            "Seven days after admission to the psychiatric unit for treatment of eating disorders, a hospitalized "
+            "20-year-old woman has a 2-day history of moderate mouth pain on the inside of both cheeks. She also "
+            'reports feeling "worthless and fat." Fluoxetine was started on admission. She appears distressed. '
+            "She is 170 cm (5 ft 7 in) tall and weighs 77 kg (170 lb); BMI is 27 kg/m2. Vital signs are within "
+            "normal limits. Physical examination shows bilateral swelling of the parotid and submandibular glands, "
+            "discoloration of several teeth, and scarring on the dorsum of the right hand. Mental status "
+            "examination shows no suicidal ideation or intent. Results of laboratory studies are within the "
+            "reference ranges. A medication with which of the following mechanisms of action is most appropriate "
+            "to treat this patient's current symptoms?"
+        ),
+        "choices": {
+            "A": "Binding to muscarinic acetylcholine receptors",
+            "B": "Binding to nicotinic acetylcholine receptors",
+            "C": (
+                "Inhibition of protein synthesis via binding to 50S ribosomal subunits and preventing "
+                "peptide bond formation"
+            ),
+            "D": "Inhibition of protein synthesis via loss of DNA helical structure",
+            "E": "Interference with bacterial wall synthesis"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 75,
+        "question": (
+            "A 35-year-old woman, gravida 2, para 1, at 15 weeks’ gestation is brought to the hospital in active "
+            "labor. The physician care team confers and determines that the birth cannot be prevented and that "
+            "the fetus will not survive. After explaining this fact to the patient, the patient says, \"I know "
+            "it is a long shot, but I still want my baby resuscitated and everything done to save him.\" After "
+            "empathizing with the patient, which of the following is the most appropriate initial response by "
+            "the physician?"
+        ),
+        "choices": {
+            "A": "\"I will ask for a second opinion.\"",
+            "B": "\"I will call the father of the baby to get his opinion as well.\"",
+            "C": "\"I will call for a medical ethics consultation.\"",
+            "D": "\"I will do everything I can to save the baby.\"",
+            "E": "\"I’m very sorry, but the baby will not survive.\""
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 76,
+        "question": (
+            "A 48-year-old man who is a contractor interpreter working for the military at a US outpost in "
+            "Afghanistan comes to the medical clinic because of a 20-day history of nonhealing, painless ulcers "
+            "on his neck and arms. The lesions enlarged over time and began to express clear fluid, eventually "
+            "forming shallow ulcers. When the symptoms began, he was sleeping on a mattress on the floor in an "
+            "old building without air conditioning where the ambient temperature ranged from 21.1°C (70.0°F) to "
+            "43.3°C (110.0°F). He originally attributed the lesions to bug bites. Vital signs are within normal "
+            "limits. Physical examination shows six 2-cm, papular lesions scattered over the neck and upper "
+            "extremities; each lesion has a 0.6-cm ulcer in the center. There is no pus or exudate. Which of the "
+            "following vectors is the most likely source of the lesions in this patient?"
+        ),
+        "choices": {
+            "A": "Flea",
+            "B": "Mosquito",
+            "C": "Sand fly",
+            "D": "Spider",
+            "E": "Tick"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 77,
+        "question": (
+            "A 17-year-old boy is brought to the clinic for a follow-up examination. He has been evaluated for three "
+            "episodes of full-body weakness at the ages of 13, 16, and 17 years. Each episode occurred when he "
+            "lay down after playing in a football scrimmage. The weakness improved spontaneously during the next "
+            "6 hours; he was asymptomatic by the time he was evaluated by medical personnel. The patient "
+            "attributes the episodes to eating \"a lot of pasta and salty foods\" prior to playing football. "
+            "Results of a complete blood count and comprehensive metabolic profile following each episode have "
+            "been within the reference ranges. He has no history of serious illness and takes no medications. "
+            "Vital signs are within normal limits. Physical and neurologic examinations disclose no "
+            "abnormalities. Which of the following serum concentrations is most likely to be abnormal if "
+            "measured during one of this patient's episodes?"
+        ),
+        "choices": {
+            "A": "Calcium",
+            "B": "Chloride",
+            "C": "Magnesium",
+            "D": "Potassium",
+            "E": "Sodium"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 78,
+        "question": (
+            "A 3-day-old female newborn is brought to the hospital because of a yellowish, milky fluid leaking from "
+            "both nipples. She was delivered at term to a 20-year-old woman. Pregnancy and delivery were "
+            "uncomplicated. Examination of the newborn is otherwise unremarkable. Which of the following hormones "
+            "is the most likely cause of this finding?"
+        ),
+        "choices": {
+            "A": "Maternal estrogen",
+            "B": "Maternal progesterone",
+            "C": "Maternal prolactin",
+            "D": "Newborn estrogen",
+            "E": "Newborn progesterone",
+            "F": "Newborn prolactin"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 79,
+        "question": (
+            "A 74-year-old man comes to the office for a follow-up examination 1 month after he was discharged from "
+            "the hospital following a cardiac valve replacement operation. Physical examination shows a healing "
+            "median sternotomy wound. A prosthetic click is heard. PA and lateral chest x-rays are shown; the "
+            "arrows indicate the replaced cardiac valve. Based on these findings, which of the following cardiac "
+            "valves was most likely replaced in this patient?"
+        ),
+        "choices": {
+            "A": "Aortic",
+            "B": "Mitral",
+            "C": "Pulmonic",
+            "D": "Tricuspid"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 80,
+        "question": (
+            "A 37-year-old man who is a carpenter is brought to the emergency department 45 minutes after the sudden "
+            "onset of fever, shortness of breath, and palpitations. Four days ago, he sustained a puncture wound to "
+            "his left hand; he treated the wound with antibacterial cream and a bandage. His temperature is 39°C "
+            "(102.2°F), pulse is 120/min, respirations are 28/min, and blood pressure is 100/60 mm Hg. "
+            "Examination of the left hand shows diffuse swelling, erythema, and a 2-cm, necrotic puncture wound. "
+            "His leukocyte count is 14,000/mm3. Arterial blood gas analysis on room air shows a PCO2 of less than "
+            "32 mm Hg. Which of the following is the most likely infectious agent in this patient?"
+        ),
+        "choices": {
+            "A": "Clostridium tetani",
+            "B": "Mycobacterium abscessus",
+            "C": "Pasteurella multocida",
+            "D": "Pseudomonas aeruginosa",
+            "E": "Staphylococcus aureus"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 81,
+        "question": (
+            "A 45-year-old woman comes to the office for a follow-up examination 2 weeks after she sustained a "
+            "vertebral fracture at L1. The fracture occurred spontaneously and there is no history of trauma to "
+            "the area or other fractures. She gained 27 kg (60 lb) during the 6 months before the fracture "
+            "occurred. Her only medication is hydromorphone as needed for pain. She is 163 cm (5 ft 4 in) tall "
+            "and now weighs 100 kg (220 lb); BMI is 38 kg/m2. Temperature is 37.0°C (98.6°F), pulse is 86/min, "
+            "respirations are 12/min, and blood pressure is 145/98 mm Hg. Physical examination shows central "
+            "obesity and purple striae over the abdomen bilaterally. The lower extremities appear thin. Results "
+            "of laboratory studies are shown:\n\n"
+            "Plasma\nRenin activity 5.0 ng/mL/h (N=0.6–4.0)\nMetanephrine 0.3 nmol/L (N<0.4)\n\nSerum\nCortisol, "
+            "random 43 μg/dL\nAdrenocorticotropic hormone 120 pg/mL (N<120)\nAldosterone 8 ng/dL (N=2–9)\n\n"
+            "Urine 24-hour free cortisol excretion 340 µg/24 h (N=3.5–45)\n\n"
+            "The most likely cause of the fracture in this patient is an increase in which of the following "
+            "processes?"
+        ),
+        "choices": {
+            "A": "Calcium absorption",
+            "B": "Calcium excretion",
+            "C": "Osteoblast proliferation",
+            "D": "Osteoclast proliferation",
+            "E": "Phosphorus absorption",
+            "F": "Phosphorus excretion"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 82,
+        "question": (
+            "A 25-year-old woman comes to the emergency department because of a 3-hour history of fever, severe "
+            "headache, light-headedness, dizziness, shaking chills, and muscle aches. Five hours ago, she was "
+            "diagnosed with Lyme disease and began doxycycline therapy. She has no other history of serious "
+            "illness and takes no other medications. Menses occur at regular 28-day intervals. She is currently "
+            "menstruating and using a tampon. She appears anxious. Temperature is 37.0°C (98.6°F), pulse is "
+            "120/min, respirations are 30/min, and blood pressure is 90/60 mm Hg. Pulse oximetry on room air shows "
+            "an oxygen saturation of 94%. Physical examination shows flushing and diaphoresis. Cardiopulmonary "
+            "examination shows no other abnormalities. Which of the following is the most likely mechanism of "
+            "this patient’s current condition?"
+        ),
+        "choices": {
+            "A": "Exacerbation of infection by Borrelia burgdorferi",
+            "B": "Infection-mediated sepsis",
+            "C": "IgE-mediated allergic reaction to doxycycline",
+            "D": "Release of bacterial products producing acute inflammation",
+            "E": "Secretion of bacterial endotoxins"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 83,
+        "question": (
+            "A newborn delivered at 36 weeks' gestation to a 22-year-old woman, gravida 1, para 1, has difficulty "
+            "feeding and listlessness. The mother received no prenatal care. Spontaneous vaginal delivery was "
+            "uncomplicated. The mother's only medication was a prenatal vitamin. The newborn's length is 49 cm "
+            "(19 in; 39th percentile), and weight is 3100 g (6 lb 13 oz; 30th percentile); head circumference "
+            "is 33 cm (13 in; 12th percentile). Temperature is 37.0°C (98.6°F), pulse is 134/min, respirations "
+            "are 38/min, and blood pressure is 73/50 mm Hg. Physical examination shows ambiguous genitalia. "
+            "Results of serum studies are shown:\n\nNa+ 133 mEq/L\nK+ 5.0 mEq/L (N=3.2–5.5)\nCl– 103 mEq/L\n"
+            "HCO3– 17 mEq/L\nGlucose 42 mg/dL (N=30–60)\n\n"
+            "The most appropriate pharmacotherapy for this patient targets which of the following receptors?"
+        ),
+        "choices": {
+            "A": "Adrenocorticotropic hormone",
+            "B": "Aldosterone",
+            "C": "Androgen",
+            "D": "Gonadotropin-releasing hormone",
+            "E": "Growth hormone"
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 84,
+        "question": (
+            "A 60-year-old woman is brought to the emergency department because of a 4-day history of fever, joint "
+            "aches, and rash. Three weeks ago, she was admitted to the hospital for treatment of Staphylococcal "
+            "aureus endocarditis. She has received 21 days out of a prescribed 42-day course of intravenous "
+            "oxacillin. Currently, she appears to be in mild distress. Temperature is 38.0°C (100.4°F), pulse is "
+            "115/min, respirations are 24/min, and blood pressure is 120/70 mm Hg. Pulse oximetry on room air "
+            "shows an oxygen saturation of 97%. Physical examination shows a diffuse maculopapular rash over "
+            "the trunk and upper and lower extremities. There is no pus or erythema at the skin insertion site of "
+            "the peripherally inserted central catheter line initially placed on the day of hospital discharge. "
+            "Results of laboratory studies are shown:\n\n"
+            "Hemoglobin 11.1 g/dL\nHematocrit 33%\nLeukocyte count 12,100/mm3\nSegmented neutrophils 78%\n"
+            "Eosinophils 9%\nLymphocytes 7%\nMonocytes 6%\nPlatelet count 341,000/mm3\n\n"
+            "Serum\nNa+ 133 mEq/L\nK+ 6.5 mEq/L\nCl− 100 mEq/L\nHCO3− 15 mEq/L\nUrea nitrogen 65 mg/dL\n"
+            "Glucose 96 mg/dL\nCreatinine 5.7 mg/dL\n\n"
+            "Urine microscopy shows eosinophils and WBC casts. Which of the following is the most likely underlying "
+            "cause of this patient's condition?"
+        ),
+        "choices": {
+            "A": "Collapsing focal segmental glomerulosclerosis",
+            "B": "Glomerular hypertrophy with hemorrhage and necrosis",
+            "C": "Interstitial inflammatory infiltrate",
+            "D": "Mesangial expansion with glomerular basement membrane thickening",
+            "E": "Proximal tubular dilation with loss of brush border"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 85,
+        "question": (
+            "A 48-year-old man comes to the physician requesting treatment for alcohol withdrawal. He reports a "
+            "30-year history of consuming 6 to 10 beers daily. He has had two citations for driving while "
+            "intoxicated. He has previously experienced alcohol-associated seizures and withdrawal symptoms. His "
+            "vital signs are within normal limits. Physical examination shows palmar erythema. The most "
+            "appropriate pharmacotherapy in this patient most likely has which of the following mechanisms?"
+        ),
+        "choices": {
+            "A": "Blockade of dopamine receptors",
+            "B": "Decreased activity of dopamine transporters",
+            "C": "Enhancement of the effect of postsynaptic γ-aminobutyric acid (GABA)",
+            "D": "Increased GABA transaminase activity",
+            "E": "Inhibition of glutamate release",
+            "F": "Inhibition of serotonin reuptake",
+            "G": "Opening of glutamate channels",
+            "H": "Stimulation of 5-hydroxytryptophan receptors"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 86,
+        "question": (
+            "A 6-year-old girl is brought to the office because of two episodes of vaginal bleeding during the "
+            "past 2 months. She has no history of serious illness and receives no medications. She does not "
+            "appear to be in distress. She is at the 60th percentile for height, 40th percentile for weight, "
+            "and 35th percentile for BMI. Vital signs are within normal limits. Physical examination discloses "
+            "palpable breast buds and minimal coarse, pigmented hair on the labia. The remainder of the "
+            "examination shows no abnormalities. Results of serum studies are shown:\n\n"
+            "Thyroid-stimulating hormone 2.1 mU/mL (N=0.5–5.0)\nTestosterone 680 ng/dL (N=0.17–0.7)\n"
+            "Adrenocorticotropic hormone 18 pg/mL (N=9–52)\nEstradiol 185 pg/mL (N<20)\n"
+            "Follicle-stimulating hormone 15 mIU/mL (N<6.7)\nLuteinizing hormone 3.0 mIU/mL (N<0.2)\n\n"
+            "Which of the following is the most likely cause of this patient's condition?"
+        ),
+        "choices": {
+            "A": "Central activation of neurons",
+            "B": "Ectopic prolactin secretion",
+            "C": "Exogenous sex steroid secretion",
+            "D": "Germline GNAS activating mutation",
+            "E": "21-Hydroxylase deficiency"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 87,
+        "question": (
+            "A previously healthy 64-year-old man is brought to the emergency department 3 hours after the sudden "
+            "onset of severe flank pain. He has no history of similar pain or serious illness. He takes no "
+            "medications. He appears to be in distress. His pulse is 100/min, and blood pressure is 168/92 mm Hg. "
+            "Physical examination shows a soft abdomen with left-sided tenderness. Urinalysis shows microscopic "
+            "hematuria. A CT scan of the abdomen shows a small ureteric calculus. Analgesic therapy is initiated "
+            "and the pain resolves 1 hour later. The urine is then strained and a uric acid calculus is found. "
+            "Which of the following processes is most likely impaired in this patient?"
+        ),
+        "choices": {
+            "A": "Bile salt metabolism",
+            "B": "Cholesterol metabolism",
+            "C": "Cytochrome P450 activity",
+            "D": "Purine metabolism",
+            "E": "Urea cycle"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 88,
+        "question": (
+            "A 65-year-old woman has congestive heart failure for which she is treated with an appropriate drug "
+            "regimen including an ACE inhibitor. Because of insufficient improvement in her symptoms of dyspnea "
+            "on exertion and edema, the physician prescribes a second agent that results in hyperkalemia. This "
+            "adverse effect most likely resulted from a drug that targets which of the following labeled "
+            "locations in the diagram of a nephron?"
+        ),
+        "choices": {
+            "A": "A",
+            "B": "B",
+            "C": "C",
+            "D": "D",
+            "E": "E"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 89,
+        "question": (
+            "A 34-year-old man presents because of a 2-year history of recurrent abdominal pain and diarrhea; he "
+            "also has had an 11-kg (25-lb) weight loss during this period. He describes his stools as copious, "
+            "loose, oily and foul-smelling. His bowel movements occur six to eight times daily, often immediately "
+            "after meals, and are associated with bloating and cramping. Since the age of 21 years, he has had "
+            "several episodes of acute pancreatitis. He has not had fevers or bloody stools. He is 178 cm (5 ft "
+            "10 in) tall and weighs 57 kg (125 lb); BMI is 18 kg/m2. Physical examination shows a flat abdomen "
+            "with hyperactive bowel sounds and diffuse mild tenderness. Digital rectal examination shows no "
+            "abnormalities. Test of the stool for occult blood is negative. Treatment with which of the following "
+            "enzymes is most likely to be beneficial in this patient?"
+        ),
+        "choices": {
+            "A": "Amylase",
+            "B": "Lactase",
+            "C": "Lipase",
+            "D": "Protease",
+            "E": "Tryptase"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 90,
+        "question": (
+            "A previously healthy 65-year-old woman comes to the physician because of several episodes of fainting "
+            "during the past 2 months. Each episode lasted several minutes. Her pulse is 82/min, respirations are "
+            "20/min, and blood pressure is 135/87 mm Hg. Cardiac examination shows S3 and S4. Echocardiography "
+            "shows a pedunculated intracardiac mass. The lesion is resected. A photomicrograph of the resected "
+            "lesion is shown. This lesion was most likely obtained from which of the following locations?"
+        ),
+        "choices": {
+            "A": "Interventricular septum",
+            "B": "Left atrium",
+            "C": "Left ventricle",
+            "D": "Right atrium",
+            "E": "Right ventricle"
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 91,
+        "question": (
+            "A 4-year-old girl with type 1 diabetes mellitus is brought to the emergency department by her father "
+            "because of a 4-hour episode of restlessness, sweating, and confusion that occurred during the night. "
+            "Yesterday, he allowed her to eat cupcakes and cotton candy at a county fair. At her bedtime that "
+            "evening, he increased her dose of subcutaneous intermediate-acting and long-acting insulin. Her "
+            "symptoms began 6 hours later, then resolved spontaneously. After being informed this morning of this "
+            "nighttime episode, the mother insisted the father bring the patient to the hospital. On arrival, the "
+            "patient is alert. Her vital signs are within normal limits. Examination shows no abnormalities. Her "
+            "fingerstick blood glucose concentration is 72 mg/dL. Urinalysis is negative for glucose and ketones. "
+            "Which of the following is the most likely explanation for this patient's nighttime symptoms?"
+        ),
+        "choices": {
+            "A": "Hyperglycemia caused by increased glucose consumption",
+            "B": "Hyperglycemia caused by increased glycogen metabolism",
+            "C": "Hyperglycemia caused by insufficient exogenous insulin",
+            "D": "Hypoglycemia caused by excess exogenous insulin",
+            "E": "Hypoglycemia caused by excessive renal glucose loss",
+            "F": "Hypoglycemia caused by increased glucagon secretion",
+            "G": "Nightmare disorder",
+            "H": "Sleep terror disorder"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 92,
+        "question": (
+            "A 75-year-old woman comes to the physician because of a 3-year history of pain in her wrists and hands. "
+            "She says that the pain has become more severe during the past 3 months. She has difficulty buttoning "
+            "her coat because of the pain. Physical examination shows the findings in the photograph. Which of "
+            "the following additional hand findings is most likely in this patient?"
+        ),
+        "choices": {
+            "A": "Cortical thinning",
+            "B": "Degenerative changes of the cartilage",
+            "C": "Inflammation of digital tendons",
+            "D": "Neutrophilic infiltration of the synovium",
+            "E": "Thickening of the synovium with pannus"
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 93,
+        "question": (
+            "A 66-year-old man who was recently diagnosed with Parkinson disease comes to the physician for a "
+            "follow-up examination. Carbidopa-levodopa therapy was initiated at the time of diagnosis. The patient "
+            "tells the physician that he still has episodes during which he \"freezes.\" He has a clumsy gait, and "
+            "there is rigidity of his upper extremities and hands. An adjunct therapy designed to inhibit which "
+            "of the following enzymes is most likely indicated in this patient?"
+        ),
+        "choices": {
+            "A": "Aromatic L-amino acid decarboxylase",
+            "B": "Dopamine β-hydroxylase",
+            "C": "Monoamine oxidase B",
+            "D": "Phenylethanolamine N-methyltransferase",
+            "E": "Tyrosine hydroxylase"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 94,
+        "question": (
+            "A 2-week-old male newborn is brought to the office for a well-child examination. He was delivered "
+            "following an uncomplicated, spontaneous vaginal delivery at 41 weeks' gestation. The mother has no "
+            "history of serious illness and did not receive prenatal care. Her only medication is a prenatal "
+            "vitamin. She has consumed large amounts of vodka nightly for 10 years. Which of the following "
+            "examination findings is most likely to be present in this patient?"
+        ),
+        "choices": {
+            "A": "Hypospadias",
+            "B": "Limb hypoplasia",
+            "C": "Neck webbing",
+            "D": "Short palpebral fissures",
+            "E": "Spasticity"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 95,
+        "question": (
+            "A 16-year-old boy is brought to the office by his parents to discuss results of a biopsy done 3 days ago "
+            "for a rapidly enlarging neck mass. He first noted the mass 1 month ago. Two weeks ago, he was "
+            "evaluated for an episode of prolonged epistaxis and was found to have a right ear effusion, which "
+            "was treated with amoxicillin-clavulanic acid. He has no other history of serious illness and takes "
+            "no medications. Height is at the 10th percentile, weight is at the 50th percentile, and BMI is at "
+            "the 75th percentile. Vital signs are within normal limits. Physical examination shows a right ear "
+            "effusion and a 4-cm, firm mass in the right posterior triangle of the neck. Results of a biopsy "
+            "specimen show squamous epithelium with indistinct cell margins, enlarged atypical nuclei, and "
+            "absent keratin formation. Which of the following infectious agents is the most likely underlying "
+            "cause of this patient's current condition?"
+        ),
+        "choices": {
+            "A": "Cytomegalovirus",
+            "B": "Epstein-Barr virus",
+            "C": "HIV",
+            "D": "Human herpesvirus 8"
+        },
+        "correct_answer": "E",  # Based on the numbering mismatch, see explanation below.
+    },
+    {
+        "question_number": 96,
+        "question": (
+            "A 57-year-old man with chronic low back pain comes to the office for a routine health maintenance "
+            "examination. The patient's last visit to the office was 2 years ago, and today he says he is "
+            "\"doing about the same,\" except for an unintentional 10-kg (22-lb) weight gain. He attributes the "
+            "weight gain to inability to exercise because of his back pain, and he is now considering applying "
+            "for disability benefits. He was evaluated by a back pain specialist 3 months ago and underwent an "
+            "MRI of the lumbar spine at that time; however, he says he did not understand the specialist's "
+            "explanation regarding the MRI results and requests further explanation. Medical history also is "
+            "remarkable for hyperlipidemia, seasonal allergies, and opioid use disorder; he has not used opioids "
+            "of any kind since he stopped prescription oxycodone use 5 years ago. Routine medications are "
+            "atorvastatin, diclofenac, and loratadine. He develops skin flushing when taking niacin, but he "
+            "has no known drug allergies. He has smoked two packs of cigarettes daily for 25 years. He previously "
+            "drank two beers daily, but he has not consumed any alcoholic beverages or used any recreational drugs "
+            "for the past 5 years. He is 178 cm (5 ft 10 in) tall and weighs 104 kg (230 lb); BMI is 33 kg/m2. "
+            "Vital signs are within normal limits; blood pressure is 128/70 mm Hg. While standing, the patient "
+            "leans forward slightly. Range of motion on lumbar extension and flexion is decreased. The remainder "
+            "of the examination discloses no abnormalities. Results of fasting serum studies are shown:\n\n"
+            "Na+ 140 mEq/L\nK+ 4.7 mEq/L\nCl− 100 mEq/L\nHCO3− 24 mEq/L\nUrea nitrogen 15 mg/dL\nCreatinine "
+            "0.7 mg/dL\n\nCholesterol\nTotal 230 mg/dL\nHDL 60 mg/dL\nLDL 154 mg/dL\nTriglycerides 80 mg/dL\n\n"
+            "MRI of the lumbar spine is shown. Which of the following factors in this patient's history most "
+            "strongly contributed to the MRI findings?"
+        ),
+        "choices": {
+            "A": "Alcohol consumption",
+            "B": "Cigarette smoking",
+            "C": "Diclofenac use",
+            "D": "Loratadine use",
+            "E": "Opioid use"
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 97,
+        "question": (
+            "A 15-year-old boy is brought to the office by his parents to discuss results of a biopsy done 3 days "
+            "ago for a rapidly enlarging neck mass. He first noted the mass 1 month ago. Two weeks ago, he was "
+            "evaluated for an episode of prolonged epistaxis and was found to have a right ear effusion, which "
+            "was treated with amoxicillin-clavulanic acid. He has no other history of serious illness and takes "
+            "no medications. Height is at the 10th percentile, weight is at the 50th percentile, and BMI is at "
+            "the 75th percentile. Vital signs are within normal limits. Physical examination shows a right ear "
+            "effusion and a 4-cm, firm mass in the right posterior triangle of the neck. Results of a biopsy "
+            "specimen show squamous epithelium with indistinct cell margins, enlarged atypical nuclei, and absent "
+            "keratin formation. Which of the following infectious agents is the most likely underlying cause of "
+            "this patient's current condition?"
+        ),
+        "choices": {
+            "A": "Cytomegalovirus",
+            "B": "Epstein-Barr virus",
+            "C": "HIV",
+            "D": "Human herpesvirus 8"
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 98,
+        "question": (
+            "A 48-year-old woman with type 2 diabetes mellitus comes to the physician for a follow-up examination. "
+            "Current medications are metformin and once-daily insulin. She travels frequently and works long hours. "
+            "She says that her meals are usually fast food. She leads a sedentary lifestyle. She often forgets to "
+            "measure her blood glucose concentration. Her last hemoglobin A1c was measured as 8.4%. Which of the "
+            "following is the most appropriate action by the physician to help this patient improve her diabetic "
+            "control?"
+        ),
+        "choices": {
+            "A": "Create an exercise regimen for the patient",
+            "B": "Explore barriers to diet adherence",
+            "C": "Increase the patient's insulin dosage",
+            "D": "Increase the patient's metformin dosage",
+            "E": "Measure the patient's blood glucose concentration",
+            "F": "Order measurement of the patient's microalbumin concentration",
+            "G": "Refer the patient to a nutritionist"
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 99,
+        "question": (
+            "A 74-year-old woman with a history of coronary artery disease is brought to the emergency department "
+            "30 minutes after the sudden onset of crushing chest pain. Her pulse is 120/min, and systolic blood "
+            "pressure is 70 mm Hg. An ECG shows sinus rhythm with ST elevation in leads V1 through V3. The "
+            "physician plans to administer a drug to increase the patient's blood pressure without increasing "
+            "her pulse. Which of the following drugs is most appropriate for this patient?"
+        ),
+        "choices": {
+            "A": "Dopamine",
+            "B": "Epinephrine",
+            "C": "Isoproterenol",
+            "D": "Norepinephrine",
+            "E": "Phenylephrine"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 100,
+        "question": (
+            "A 2-month-old girl is admitted to the hospital because of severe pneumonia. She has a history of "
+            "mucocutaneous candidiasis and chronic diarrhea. Her pulse is 160/min, and respirations are 40/min. "
+            "Crackles are heard over both lung fields. Her leukocyte count is 5400/mm3 (N=5000–19,500), with "
+            "86% segmented neutrophils, 6% lymphocytes, and 8% monocytes. Immunologic testing of a specimen "
+            "obtained via bronchoscopy is positive for Pneumocystis jirovecii. Flow cytometry shows normal "
+            "concentrations of natural killer cells but no T or B lymphocytes in the peripheral blood. Results "
+            "of a polymerase chain reaction test of the immunoglobulin V(D)J regions from a bone marrow specimen "
+            "show an absence of characteristic rearrangements. The most likely cause of these findings is an "
+            "alteration of which of the following?"
+        ),
+        "choices": {
+            "A": "Bruton tyrosine kinase",
+            "B": "CD40 ligand",
+            "C": "Mevalonate kinase",
+            "D": "NADPH oxidase",
+            "E": "Recombination-activating gene 1 (RAG1) and RAG2"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 101,
+        "question": (
+            "A 25-year-old woman, gravida 1, para 1, comes to the office because of a 2-week history of palpitations "
+            "and heat intolerance. She delivered her child 3 months ago following an uncomplicated pregnancy and "
+            "delivery. She is breast-feeding. She has no history of serious illness and takes no medications. She "
+            "is 163 cm (5 ft 4 in) tall and weighs 54 kg (120 lb); BMI is 21 kg/m2. Temperature is 37°C (98.6°F), "
+            "pulse is 106/min, respirations are 20/min, and blood pressure is 124/68 mm Hg. Examination shows "
+            "moist palms and bilateral lid lag. No exophthalmos is noted. The thyroid gland is enlarged and "
+            "nontender. No murmurs are heard on cardiac examination. Deep tendon reflexes are 3+. Serum studies "
+            "show an undetectable TSH concentration, thyroxine (T4) concentration of 20 μg/dL, and "
+            "triiodothyronine (T3) concentration of 275 ng/dL. Which of the following is the most likely "
+            "mechanism of this patient's symptoms?"
+        ),
+        "choices": {
+            "A": "Activation of mutations of TSH receptors",
+            "B": "Increased serum thyroglobulin concentration",
+            "C": "Ischemic injury to the hypothalamus",
+            "D": "Lymphocytic infiltration of the thyroid",
+            "E": "Presence of TSH receptor autoantibodies"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 102,
+        "question": (
+            "A 53-year-old woman comes to the office because of a 6-year history of stiffness and pain of her hands. "
+            "She has difficulty buttoning her clothes because of the symptoms. She takes no medications. Physical "
+            "examination shows the findings in the photograph. An abnormality of which of the following is most "
+            "likely to confirm the diagnosis in this patient?"
+        ),
+        "choices": {
+            "A": "Anti-citrullinated peptide antibody",
+            "B": "Antimitochondrial antibody assay",
+            "C": "Human leukocyte antigen-DQ2 antibody assay",
+            "D": "Precursor of the erythroid cell line",
+            "E": "Precursor of the thrombopoietic line"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 103,
+        "question": (
+            "A 73-year-old woman comes to the emergency department because of a 6-hour history of severe abdominal "
+            "pain. She has chronic atrial fibrillation and underwent placement of a prosthetic mitral valve 4 "
+            "years ago. Her pulse is 120/min and irregularly irregular, and blood pressure is 80/60 mm Hg. "
+            "Arteriography shows an embolus in the superior mesenteric artery lodged just beyond the patent "
+            "middle colic artery. A laparotomy is done. During this procedure, which of the following segments of "
+            "the abdominal viscera is most likely to appear normal?"
+        ),
+        "choices": {
+            "A": "Ascending colon",
+            "B": "Distal ileum",
+            "C": "Distal jejunum",
+            "D": "Proximal ileum",
+            "E": "Proximal jejunum"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 104,
+        "question": (
+            "A 2-year-old boy is brought to the physician because of failure to thrive. He also has had loose, fatty, "
+            "foul-smelling stools and a cough during the past 2 weeks. He is at the 30th percentile for height "
+            "and 10th percentile for weight. Physical examination shows no other abnormalities. Laboratory "
+            "studies show steatorrhea and a sweat chloride concentration of 80 mmol/L. A chest x-ray shows "
+            "hyperinflation. Sputum culture grows Haemophilus influenzae and Staphylococcus aureus. Secretion "
+            "of which of the following substances is most likely to be decreased in this patient?"
+        ),
+        "choices": {
+            "A": "Bicarbonate",
+            "B": "Gastric acid",
+            "C": "Glucagon",
+            "D": "Insulin",
+            "E": "Intrinsic factor"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 105,
+        "question": (
+            "A 73-year-old man is brought to the emergency department by his family 1 hour after he walked into the "
+            "left side of a door frame when leaving his bedroom and then tripped over a chair that was on his "
+            "left side. Visual field testing shows left lower quadrantanopia. When tactile stimuli are presented "
+            "on both the left and right sides simultaneously, the patient correctly identifies only the ones on "
+            "the right. Further examination shows no motor or language deficits. Proprioception is intact. This "
+            "patient most likely has a brain lesion in which of the following lobes?"
+        ),
+        "choices": {
+            "A": "Left frontal",
+            "B": "Left parietal",
+            "C": "Left temporal",
+            "D": "Right frontal",
+            "E": "Right parietal",
+            "F": "Right temporal"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 106,
+        "question": (
+            "A 10-year-old boy is brought to the physician because of a 3-week history of nosebleeds and easy "
+            "bruisability. His older brother has had similar episodes. He is at the 30th percentile for height "
+            "and weight. Physical examination shows nasal and gingival bleeding and several ecchymoses over the "
+            "trunk and upper and lower extremities in various stages of healing. Laboratory studies show a "
+            "platelet count of 300,000/mm3 (N=150,000–400,000). Platelet adhesion testing shows a normal "
+            "response to ristocetin, but aggregation does not occur in response to thrombin; platelet morphology "
+            "is normal. Prothrombin time and activated partial thromboplastin time are within the reference "
+            "ranges. A defect in which of the following is the most likely cause of the findings in this patient?"
+        ),
+        "choices": {
+            "A": "Factor VII (proconvertin)",
+            "B": "Fibrinogen",
+            "C": "Glycoprotein IIb-IIIa",
+            "D": "Granule storage pool",
+            "E": "von Willebrand factor"
+        },
+        "correct_answer": "C"
+    },
+    {
+        "question_number": 107,
+        "question": (
+            "A previously healthy 45-year-old woman who works as a park ranger comes to the physician because of a "
+            "1-week history of shortness of breath, even at rest. She has lived in the mountains at 10,000 feet "
+            "above sea level for 2 years; the physician’s office is located at sea level. Her pulse is 85/min, "
+            "respirations are 18/min, and blood pressure is 125/90 mm Hg. Physical examination while sitting "
+            "upright shows jugular venous distention and 2+ pedal edema. During the past 2 years, which of the "
+            "following has most likely decreased in this patient?"
+        ),
+        "choices": {
+            "A": "Height of P waves in lead I of the patient's ECG",
+            "B": "Height of R waves in lead V1 of the patient's ECG",
+            "C": "Hematocrit",
+            "D": "Pulmonary vascular resistance",
+            "E": "Right ventricular diastolic compliance",
+            "F": "Right ventricular wall thickness"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 108,
+        "question": (
+            "A 5-year-old girl is brought to the office by her mother because of a 6-hour history of bloody "
+            "diarrhea. She is interactive and in no acute distress. Her blood pressure is 90/55 mm Hg. Abdominal "
+            "examination shows normoactive bowel sounds. Stool cultures are obtained, and the patient's mother "
+            "is advised to give the girl plenty of fluids. Five days later, the patient develops decreased urine "
+            "output and is brought back to the office. Her blood pressure is now 135/88 mm Hg. Physical "
+            "examination shows pallor. Laboratory studies show:\n\n"
+            "Hemoglobin 8.5 g/dL (N=11–15)\nHematocrit 26% (N=28%–45%)\nPlatelet count 45,000/mm3 (N=150,000–400,000)\n"
+            "Serum creatinine 3.3 mg/dL (N=0.3–0.7)\n\n"
+            "Which of the following infectious agents is the most likely cause of these findings?"
+        ),
+        "choices": {
+            "A": "Campylobacter jejuni",
+            "B": "Escherichia coli",
+            "C": "Rotavirus",
+            "D": "Salmonella enterica serovar enteritidis",
+            "E": "Yersinia pestis"
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 109,
+        "question": (
+            "A 78-year-old woman is admitted to the intensive care unit because of diverticulitis complicated by "
+            "Escherichia coli sepsis. Treatment with ciprofloxacin is started. Three days later, her serum "
+            "creatinine concentration has increased from 0.7 mg/dL on admission to 1.3 mg/dL. Urinalysis shows "
+            "muddy brown casts. The most likely cause of the findings in this patient is ischemia of which of "
+            "the following structures?"
+        ),
+        "choices": {
+            "A": "Bowman capsule",
+            "B": "Glomerulus",
+            "C": "Interstitium",
+            "D": "Proximal tubule",
+            "E": "Renal vein"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 110,
+        "question": (
+            "A 19-year-old man who is a college freshman comes to the office because of a 4-day history of tender, "
+            "swollen glands. He also has a 6-day history of fever, malaise, and decreased appetite. His "
+            "temperature is 38.7°C (101.7°F). Physical examination shows swelling of the parotid glands. "
+            "Which of the following infectious agents is the most likely cause of these findings?"
+        ),
+        "choices": {
+            "A": "Epstein-Barr virus",
+            "B": "Hepatitis B virus",
+            "C": "Measles virus",
+            "D": "Mumps virus",
+            "E": "Rubella virus"
+        },
+        "correct_answer": "D"
+    },
+    {
+        "question_number": 111,
+        "question": (
+            "A 34-year-old woman with myasthenia gravis comes to the emergency department because of a 2-day history "
+            "of increasing weakness, shortness of breath, and abdominal cramping. Current medications are "
+            "prednisone and pyridostigmine. Her temperature is 37°C (98.6°F), pulse is 45/min, and respirations "
+            "are 25/min and shallow. Her voice is soft and hypernasal, and she coughs weakly when swallowing water. "
+            "Breath and heart sounds are normal. Pulmonary testing shows inability to generate a normal negative "
+            "inspiratory force during forced inspiration. The abdomen is soft and nontender, with increased bowel "
+            "sounds. Muscle strength is 4/5 diffusely, with severe, continuous, and diffuse fasciculations. Deep "
+            "tendon reflexes are sluggish, but symmetric. Which of the following is the most likely cause of this "
+            "patient's weakness?"
+        ),
+        "choices": {
+            "A": "Aspiration pneumonia",
+            "B": "Guillain-Barré syndrome",
+            "C": "Insufficient dose of prednisone",
+            "D": "Motor neuron disease",
+            "E": "Pyridostigmine overdose"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 112,
+        "question": (
+            "A 35-year-old woman comes to the office because she has had three first-trimester spontaneous abortions "
+            "during the past 3 years. Physical examination shows no abnormalities. Laboratory studies show no "
+            "endocrine abnormalities. Chromosomal analysis shows a paracentric inversion of the long arm of "
+            "chromosome 1. Which of the following best describes this patient’s risk for early spontaneous "
+            "abortions and a liveborn child with aneuploidy?\n\n"
+            "Risk for Early Spontaneous Abortions   Risk for Liveborn Child With Aneuploidy"
+        ),
+        "choices": {
+            "A": "High / High",
+            "B": "High / Low",
+            "C": "Low / High",
+            "D": "Low / Low"
+        },
+        "correct_answer": "B"
+    },
+    {
+        "question_number": 113,
+        "question": (
+            "A 25-year-old man comes to the office because of a 4-hour history of irritability, restlessness, "
+            "tremor, and palpitations. He is a known user of amphetamines. His pulse is 120/min, respirations "
+            "are 25/min, and blood pressure is 150/100 mm Hg. Physical examination shows no abnormalities. "
+            "The most likely cause of this patient's symptoms is sympathomimetic activity arising from which "
+            "of the following?"
+        ),
+        "choices": {
+            "A": "Decreased intracellular metabolism of biogenic amines",
+            "B": "Decreased monoamine oxidase activity",
+            "C": "Decreased presynaptic receptor activation",
+            "D": "Increased intracellular metabolism of biogenic amines",
+            "E": "Increased presynaptic receptor activation",
+            "F": "Increased release of biogenic amines"
+        },
+        "correct_answer": "F"
+    },
+    {
+        "question_number": 114,
+        "question": (
+            "A 14-year-old boy is brought to the office by his mother because of a 1-week history of seizures and "
+            "difficulty walking. Physical examination shows decreased sensation over the hands and feet and "
+            "generalized weakness. He walks with an ataxic gait. A muscle biopsy specimen shows coarsely "
+            "granular fibers that stain red with Gomori trichrome stain. This patient most likely has a genetic "
+            "defect that most directly affects the synthesis of which of the following?"
+        ),
+        "choices": {
+            "A": "ATP",
+            "B": "Creatine phosphate",
+            "C": "Glycogen",
+            "D": "NADH",
+            "E": "Pyruvate"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 115,
+        "question": (
+            "A 72-year-old man is brought to the office because of a 6-month history of increasing fatigue and a "
+            "1-month history of numbness of his feet. Physical examination shows marked pallor. Proprioception "
+            "and sensation to vibration are decreased in the lower extremities. Laboratory studies show:\n\n"
+            "Hemoglobin 7.6 g/dL\nMean corpuscular volume 117 μm3\nReticulocyte count 0%\nSerum vitamin B12 "
+            "(cobalamin) 23.6 pg/mL (N=200–900)\n\n"
+            "Histopathology of a gastric mucosal biopsy specimen shows atrophic gastritis with extensive "
+            "lymphocyte infiltration. Serologic studies will most likely show autoantibodies to which of the "
+            "following labeled cell types in the photomicrograph of normal mucosa or to one of its "
+            "secretory products?"
+        ),
+        "choices": {
+            # The user references a figure with labeled cells, presumably "parietal cells"
+            # The correct answer from the key is E, but it says "E" is "Precursor of the thrombopoietic line" for Q115?? There's confusion
+            # Actually, the key says #115 => "E". But from the knowledge we have, pernicious anemia is autoantibody to parietal cells or IF
+            # Possibly the question's correct label is "Parietal cells" in the figure. We'll just store it as the answer "E" from official key. 
+            # The question is about "Which labeled cells or secretory product?" So let's store minimal placeholders for the choices.
+            "A": "Chief cells",
+            "B": "G cells",
+            "C": "Mucous cells",
+            "D": "Parietal cell secretory canaliculi",
+            "E": "Parietal cells (intrinsic factor)"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 116,
+        "question": (
+            "A 66-year-old woman comes to the office for a follow-up examination 1 month after being diagnosed with "
+            "paroxysmal atrial fibrillation. Appropriate pharmacotherapy was initiated at that time, and normal "
+            "sinus rhythm was restored. Her pulse is 76/min, and blood pressure is 132/86 mm Hg. Physical "
+            "examination shows no abnormalities. The ECGs shown represent before (solid line) and after (dashed "
+            "line) administration of the antiarrhythmic drug. Which of the following drugs was most likely "
+            "prescribed?"
+        ),
+        "choices": {
+            "A": "Amiodarone",
+            "B": "Digoxin",
+            "C": "Mexiletine",
+            "D": "Phenytoin",
+            "E": "Verapamil"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 117,
+        "question": (
+            "A 4-year-old boy develops fever 3 weeks after being admitted to the hospital for induction chemotherapy "
+            "for treatment of acute lymphoblastic leukemia. Chemotherapy medications are L-asparaginase, "
+            "dexamethasone, doxorubicin, and vincristine. His temperature is 38.2°C (100.8°F), pulse is 122/min, "
+            "and respirations are 24/min. Physical examination shows pallor, alopecia, and ulcerations over the "
+            "gums. A central venous catheter with entry site in the right upper chest is present but has no "
+            "surrounding erythema. A blood culture grows gram-negative rods after 36 hours. Which of the following "
+            "underlying mechanisms is the most likely cause of this patient's susceptibility to infection?"
+        ),
+        "choices": {
+            "A": "Deficiency of terminal complement",
+            "B": "Hypogammaglobulinemia",
+            "C": "Impaired T-lymphocyte function",
+            "D": "Inhibition of tumor necrosis factor α function",
+            "E": "Neutropenia"
+        },
+        "correct_answer": "E"
+    },
+    {
+        "question_number": 118,
+        "question": (
+            "A 6-year-old boy with acute lymphoblastic leukemia is brought to the office for a follow-up "
+            "examination. He is receiving high-dose methotrexate therapy. A drug is added to the patient's "
+            "medication regimen to decrease the toxicity of this therapy to normal cells. The beneficial effect "
+            "of this new drug on normal cells is most likely achieved by bypassing the cellular requirement for "
+            "which of the following enzymes?"
+        ),
+        "choices": {
+            "A": "Dihydrofolate reductase",
+            "B": "Methionine synthase",
+            "C": "Pyruvate decarboxylase",
+            "D": "Thiamine pyrophosphate",
+            "E": "Thymidylate synthase"
+        },
+        "correct_answer": "A"
+    },
+    {
+        "question_number": 119,
+        "question": (
+            "A screening test for breast cancer is administered to 1000 women with biopsy-proven breast cancer and "
+            "to 1000 women without breast cancer. The test results are positive for 250 of the subjects with "
+            "breast cancer and 100 of the subjects without breast cancer. The screening test is now to be used on "
+            "a population of 100,000 women with a known prevalence rate of breast cancer of 80 per 100,000. Which "
+            "of the following is the expected number of false-positives?"
+        ),
+        "choices": {
+            "A": "20",
+            "B": "80",
+            "C": "8993",
+            "D": "9992",
+            "E": "10,012"
+        },
+        "correct_answer": "D"
+    }
 ]
 
 ### ### ###
-#practice_test_questions = practice_test_questions[:10] #limit to 10 to speed up testing
+practice_test_questions = practice_test_questions[:2] #limit to 5 to speed up testing & make sure everything works
+#practice_test_questions = practice_test_questions[:50] #limit to 50
 
 
 def call_ollama(prompt: str, model_name: str) -> str:
@@ -1058,21 +2519,16 @@ def call_ollama(prompt: str, model_name: str) -> str:
     response_data = resp.json()
     return response_data.get("response", "")
 
-
-
 def call_openai(prompt: str, model_name: str) -> str:
     """
     Calls the OpenAI ChatCompletion endpoint using the given 'model_name'.
     Returns the text from the assistant's message content.
     The prompt is put into the user content of a single-turn chat. 
-    Timeout of 120 seconds. 
-    Make sure OPENAI_API_KEY is set in your environment 
-    or set openai.api_key = 'sk-...' in your code.
     """
-
+    
     client = OpenAI()
     if not client.api_key:
-        client.api_key = "[YOUR_OpenAI API key_HERE]" #google OpenAI API, create account on portal, create API key
+        client.api_key = "YOUR_OpenAI_API_key_here"
 
     if not client.api_key:
         print("No OpenAI API key found. Cannot call OpenAI model.")
@@ -1093,19 +2549,57 @@ def call_openai(prompt: str, model_name: str) -> str:
     content = response.choices[0].message.content
     return content or ""
 
+def call_claude(prompt: str, model_name: str) -> str:
+    """
+    Calls the Anthropic API to get a completion from Claude.
+    Returns the assistant's response text.
+    The prompt is sent as the user's message in a chat conversation.
+    """
+    # Get the API key from environment variable
+    anthropic_api_key = "YOUR_Claude_API_key_here"
+    if not anthropic_api_key:
+        print("No Anthropic API key found in ANTHROPIC_API_KEY environment variable.")
+        return ""
+
+    # Initialize the client with your API key
+    client = anthropic.Anthropic(api_key=anthropic_api_key)
+
+    # Construct the messages list
+    messages = [
+        {"role": "user", "content": prompt}
+    ]
+
+    try:
+        # Call the Anthropic API
+        response = client.messages.create(
+            model=model_name,
+            max_tokens=1024,
+            messages=messages
+        )
+    except Exception as e:
+        print(f"Error connecting to Anthropic (model={model_name}): {e}")
+        return ""
+
+    # Extract the assistant's reply
+    response_text = ''.join([block.text for block in response.content if hasattr(block, 'text')])
+
+    return response_text.strip() or ""
+
 def call_model_api(prompt: str, model_info: dict) -> str:
     """
     Chooses the appropriate API caller based on model_info["engine"].
     model_info should have at least:
-      {"model_name": "...", "engine": "ollama" or "openai"}
+      {"model_name": "...", "engine": "ollama", "openai", or "claude"}
     """
     engine = model_info.get("engine", "ollama")
     model_name = model_info["model_name"]
 
     if engine.lower() == "openai":
         return call_openai(prompt, model_name)
+    elif engine.lower() == "claude":
+        return call_claude(prompt, model_name)
     else:
-        # default to ollama
+        # Default to Ollama
         return call_ollama(prompt, model_name)
 
 def extract_last_line(response_text: str) -> str:
@@ -1119,10 +2613,20 @@ def extract_last_line(response_text: str) -> str:
     last_line = lines[-1]
     return last_line.upper()
 
+def format_time(seconds):
+    """
+    Formats the time from seconds to 'HH hours MM minutes SS seconds'
+    """
+    hours = int(seconds) // 3600
+    minutes = (int(seconds) % 3600) // 60
+    secs = int(seconds) % 60
+
+    return f"{hours:02d} hours {minutes:02d} minutes {secs:02d} seconds"
+
 def test_single_model(model_info: dict):
     """
     Runs the practice test on a single model, returning:
-      (correct_count, total_questions, percentage_correct)
+      (correct_count, total_questions, percentage_correct, time_taken)
     Also prints the step-by-step results.
 
     model_info is a dict with:
@@ -1136,6 +2640,9 @@ def test_single_model(model_info: dict):
 
     total_questions = len(practice_test_questions)
     correct_count = 0
+
+    # Start timing for this model
+    start_time = time.time()
 
     for q in practice_test_questions:
         question_text = q["question"]
@@ -1165,6 +2672,7 @@ def test_single_model(model_info: dict):
             continue
 
         # Extract the last line, parse a single letter
+        # for thinking models that output more than just an answer, and allows things like 'answer: B' for example
         last_line = extract_last_line(response_text)
         match = re.search(r"\b([A-E])\b", last_line, re.IGNORECASE)
         if match:
@@ -1177,6 +2685,16 @@ def test_single_model(model_info: dict):
             print(f"Model answer: {model_answer} | Correct! ✅")
         else:
             print(f"Model answer: {model_answer} | Incorrect ❌ (Correct: {correct_answer})")
+        time.sleep(2)
+
+    percentage_correct = (correct_count / total_questions) * 100
+
+    # End timing for this model
+    end_time = time.time()
+    time_taken = end_time - start_time
+
+    # Calculate time per question
+    time_per_question = time_taken / total_questions
 
     percentage_correct = (correct_count / total_questions) * 100
 
@@ -1185,39 +2703,51 @@ def test_single_model(model_info: dict):
     print(f"Model: {model_name}  (engine={engine})")
     print(f"Result: {correct_count} / {total_questions} correct")
     print(f"Percentage correct: {percentage_correct:.1f}%")
+    print(f"Time taken: {format_time(time_taken)}")
+    print(f"Time per Q: {time_per_question:.1f}s")
     print("=====================================")
 
-    return correct_count, total_questions, percentage_correct
+    return correct_count, total_questions, percentage_correct, time_taken, time_per_question
 
 def test_multiple_models(model_list):
     """
     Loops through each model in model_list, calls test_single_model,
-    and then prints a final ranking sorted by % correct descending.
+    and then prints a final ranking sorted by % correct descending,
+    then by time taken ascending.
 
     model_list is a list of dicts, each with:
       {
         "model_name": "some_model_id",
-        "engine": "ollama" or "openai"
+        "engine": "ollama", "openai", or "claude"
       }
     """
-    results = []  # tuples: (model_name, engine, correct_count, total, pct)
+    results = []  # tuples: (model_name, engine, correct_count, total, pct, time_taken, time_per_question)
 
     for model_info in model_list:
-        c, t, p = test_single_model(model_info)
-        results.append((model_info["model_name"], model_info.get("engine","ollama"), c, t, p))
+        correct_count, total, percentage_correct, time_taken, time_per_question = test_single_model(model_info)
+        results.append((
+            model_info["model_name"],
+            model_info.get("engine", "ollama"),
+            correct_count,
+            total,
+            percentage_correct,
+            time_taken,
+            time_per_question
+        ))
 
-    # Sort by percentage descending
-    results.sort(key=lambda x: x[4], reverse=True)
+    # Sort by percentage correct descending, then by time taken ascending
+    results.sort(key=lambda x: (-x[4], x[5]))  # x[4]=percentage_correct, x[5]=time_taken
 
     # Print final ranking table
     print("\n\n===================== 2024 STEP-SAMPLE TEST RANKING SUMMARY =====================")
-    print("{:<30} {:<8} | {:>5}  |  {}/{}".format("Model Name", "Engine", "%Corr", "Corr", "Total"))
-    print("-" * 60)
+    print("{:<50} {:<8} | {:>5}  |  {}/{}  | Time to Complete     | Time per Q".format("Model Name", "Engine", "%Corr", "Corr", "Total"))
+    print("-" * 110)
 
-    for (mname, eng, correct_count, total, pct) in results:
-        print(f"{mname:<30} {eng:<8} | {pct:>5.1f}% |  {correct_count}/{total}")
+    for model_name, engine, correct_count, total, percentage_correct, time_taken, time_per_question in results:
+        formatted_time = format_time(time_taken)
+        print(f"{model_name:<50} {engine:<8} | {percentage_correct:>5.1f}% |  {correct_count}/{total}  | {formatted_time:<20} | {time_per_question:.1f}s")
 
-    print("===========================================================")
+    print("=" * 110)
 
 
 if __name__ == "__main__":
@@ -1234,8 +2764,13 @@ if __name__ == "__main__":
         {"model_name": "o1-mini", "engine": "openai"},
         {"model_name": "o1-preview", "engine": "openai"},
 
+        # Claude models:
+        {"model_name": "claude-3-5-haiku-latest", "engine": "claude"},
+        {"model_name": "claude-3-5-sonnet-20241022", "engine": "claude"},
+        {"model_name": "claude-3-opus-latest", "engine": "claude"},
+
         # Ollama models:
-        {"model_name": "deepseek-r1:8b-llama-distill-q8_0", "engine": "ollama"},
+        #{"model_name": "deepseek-r1:8b-llama-distill-q8_0", "engine": "ollama"}, #14b is better
         #{"model_name": "deepseek-r1:7b-qwen-distill-q8_0", "engine": "ollama"}, #performed poorly
         {"model_name": "deepseek-r1:14b-qwen-distill-q4_K_M", "engine": "ollama"},
         {"model_name": "openchat:7b-v3.5-1210-q8_0", "engine": "ollama"},
