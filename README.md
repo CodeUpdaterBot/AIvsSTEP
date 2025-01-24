@@ -18,6 +18,8 @@ Choose which models to use (line 1229):
         {"model_name": "openchat:7b-v3.5-1210-q8_0", "engine": "ollama"},
         {"model_name": "llama3.1:8b-instruct-q8_0", "engine": "ollama"}
 
+Run with python main.py
+
 **To use ChatGPT/OpenAI:** You must set the client.api_key to your OpenAI API Key (line 1075)
 
 **To use Ollama models:** You must be running Ollama and have the proper model name entered. You can check by running the Command Prompt and typing 'ollama list' to see which ollama models you have installed. 
