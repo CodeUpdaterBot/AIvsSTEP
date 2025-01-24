@@ -1013,3 +1013,361 @@ Model answer: B | Correct! ✅
 === Model: o1-preview (openai) | Question 42 ===
 Model answer: A | Correct! ✅
 
+=== Model: o1-preview (openai) | Question 43 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 44 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: o1-preview (openai) | Question 45 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 46 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 47 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 48 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 49 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 50 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 51 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 52 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 53 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 54 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 55 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 56 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 57 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 58 ===
+Model answer: A | Incorrect ❌ (Correct: E)
+
+=== Model: o1-preview (openai) | Question 59 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 60 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 61 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 62 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 63 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 64 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 65 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 66 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 67 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 68 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 69 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 70 ===
+Model answer: E | Incorrect ❌ (Correct: D)
+
+=== Model: o1-preview (openai) | Question 71 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 72 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 73 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 74 ===
+Model answer: E | Incorrect ❌ (Correct: A)
+
+=== Model: o1-preview (openai) | Question 75 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 76 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 77 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 78 ===
+Model answer:  | Incorrect ❌ (Correct: C)
+
+=== Model: o1-preview (openai) | Question 79 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 80 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 81 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 82 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 83 ===
+Model answer: A | Incorrect ❌ (Correct: B)
+
+=== Model: o1-preview (openai) | Question 84 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 85 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 86 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 87 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 88 ===
+Model answer: D | Incorrect ❌ (Correct: E)
+
+=== Model: o1-preview (openai) | Question 89 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 90 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 91 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 92 ===
+Model answer: E | Incorrect ❌ (Correct: B)
+
+=== Model: o1-preview (openai) | Question 93 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 94 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 95 ===
+Model answer: B | Incorrect ❌ (Correct: E)
+
+=== Model: o1-preview (openai) | Question 96 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 97 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 98 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 99 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 100 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 101 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 102 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 103 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 104 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 105 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 106 ===
+Model answer: C | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 107 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 108 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 109 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 110 ===
+Model answer: D | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 111 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 112 ===
+Model answer: B | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 113 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: o1-preview (openai) | Question 114 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 115 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 116 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 117 ===
+Model answer: E | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 118 ===
+Model answer: A | Correct! ✅
+
+=== Model: o1-preview (openai) | Question 119 ===
+Model answer: D | Correct! ✅
+
+=====================================
+Model: o1-preview  (engine=openai)
+Result: 107 / 119 correct
+Percentage correct: 89.9%
+Time taken: 00 hours 22 minutes 15 seconds
+Time per Q: 11.2s
+=====================================
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 1 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 2 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 3 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 4 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 5 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 6 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 7 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 8 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 9 ===
+Model answer: A | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 10 ===
+Model answer: C | Incorrect ❌ (Correct: A)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 11 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 12 ===
+Model answer:  | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 13 ===
+Model answer:  | Incorrect ❌ (Correct: F)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 14 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 15 ===
+Model answer: C | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 16 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 17 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 18 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 19 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 20 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 21 ===
+Model answer:  | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 22 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 23 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 24 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 25 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 26 ===
+Model answer: A | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 27 ===
+Model answer: C | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 28 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 29 ===
+Model answer: B | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 30 ===
+Model answer: B | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 31 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 32 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 33 ===
+Model answer: C | Incorrect ❌ (Correct: D)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 34 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 35 ===
+Model answer: A | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 36 ===
+Model answer: A | Incorrect ❌ (Correct: C)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 37 ===
+Model answer: D | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 38 ===
+Model answer: E | Correct! ✅
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 39 ===
+Model answer: D | Incorrect ❌ (Correct: B)
+
+=== Model: claude-3-5-haiku-latest (claude) | Question 40 ===
+Model answer: D | Correct! ✅
