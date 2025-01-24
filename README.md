@@ -1,5 +1,5 @@
 # AI vs STEP
-A Python program that uses only the text from the the 2024 STEP-Practice Exam and runs it through OpenAI and Ollama models to see how each scores and which is the best overall.
+A Python program that uses ****only the text**** from the the 2024 STEP-Practice Exam and runs it through OpenAI and Ollama models to see how each scores and which is the best overall.
 - Practice STEP: https://www.usmle.org/sites/default/files/2021-10/Step_1_Sample_Items.pdf
 
 
