@@ -3,7 +3,7 @@ A Python program that uses ****only the text**** from the the 2024 STEP-Practice
 - Practice STEP: https://www.usmle.org/sites/default/files/2021-10/Step_1_Sample_Items.pdf
 
 
-Choose which models to use (line 1229):
+Choose which models to use (line 2745):
 
         # OpenAI models:
         {"model_name": "gpt-4o", "engine": "openai"},
