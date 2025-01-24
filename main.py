@@ -1072,7 +1072,7 @@ def call_openai(prompt: str, model_name: str) -> str:
 
     client = OpenAI()
     if not client.api_key:
-        client.api_key = "[YOUR_OpenAI API key_HERE" #google OpenAI API, create account on portal, create API key
+        client.api_key = "[YOUR_OpenAI API key_HERE]" #google OpenAI API, create account on portal, create API key
 
     if not client.api_key:
         print("No OpenAI API key found. Cannot call OpenAI model.")
