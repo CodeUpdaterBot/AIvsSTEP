@@ -4,7 +4,6 @@ A Python program that uses ****only the text**** from the the 2024 STEP-Practice
 
 
 Choose which models to use (line 1229):
-    models_to_test = [
 
         # OpenAI models:
         {"model_name": "gpt-4o", "engine": "openai"},
