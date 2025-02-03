@@ -3,6 +3,9 @@ A Python program that uses ****only the text**** from the the 2024 STEP-Practice
 
 ![image](https://github.com/user-attachments/assets/fa5cde1d-3c89-4f77-8ade-6cb448eede32)
 
+Models used (2-2-2025):
+
+    mistralai/mistral-large-2411, qwen/qwen-max, meta-llama/llama-3.1-405b-instruct, deepseek-r1-distill-llama-70b, mistralai/mistral-small-24b-instruct-2501, llama-3.3-70b-versatile, deepseek/deepseek-r1, gpt-4o, gpt-4o-mini, o1-mini, o1-preview, o3-mini-low, o3-mini-medium, o3-mini-high, claude-3-5-haiku-latest, claude-3-5-sonnet-20241022, claude-3-opus-latest]
 
 Choose which models to use at the bottom (uncomment to run):
 
@@ -65,10 +68,6 @@ cd to the folder where the main.py file is stored and run
 
  You must be running Ollama and have the proper model name entered. You can check by running the Command Prompt and typing 'ollama list' to see which ollama models you have installed. 
 - You only need a few GB of vRAM (GPU/video card memory) to run your own AI models for free
-
-Models used (2-2-2025):
-
-    mistralai/mistral-large-2411, qwen/qwen-max, meta-llama/llama-3.1-405b-instruct, deepseek-r1-distill-llama-70b, mistralai/mistral-small-24b-instruct-2501, llama-3.3-70b-versatile, deepseek/deepseek-r1, gpt-4o, gpt-4o-mini, o1-mini, o1-preview, o3-mini-low, o3-mini-medium, o3-mini-high, claude-3-5-haiku-latest, claude-3-5-sonnet-20241022, claude-3-opus-latest
 
 ## **Use this on any test**
 
