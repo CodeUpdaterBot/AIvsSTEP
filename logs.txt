@@ -1,4 +1,4 @@
-(web_ai) C:\Users\PC\medbot>python step_test_with_chatGPT.py
+(web_ai) C:\Users\PC\medbot>python main.py
 
 === Model: mistralai/mistral-large-2411 (engine=openrouter) | Step 1 | Question 1 ===
 Model answer: A | Correct! ✅
