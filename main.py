@@ -4,15 +4,43 @@ from openai import OpenAI
 import os
 import anthropic
 import time
-
+import sys
 # Colorama imports
 import colorama
 from colorama import Fore, Style
 colorama.init(autoreset=True)
 
+class Tee:
+    # Regular expression to match ANSI escape codes
+    ansi_escape = re.compile(r'\x1b\[[0-9;]*m')
+
+    def __init__(self, original_stdout, logfile):
+        self.original_stdout = original_stdout
+        self.logfile = logfile
+
+    def write(self, obj):
+        # Write to the console as-is (with color codes)
+        self.original_stdout.write(obj)
+        self.original_stdout.flush()
+
+        # Strip ANSI codes when writing to the log file
+        text = self.ansi_escape.sub('', obj)
+        try:
+            self.logfile.write(text)
+        except UnicodeEncodeError:
+            # Encode as UTF-8 with replacement for unencodable characters
+            self.logfile.write(text.encode('utf-8', errors='replace').decode('utf-8'))
+        self.logfile.flush()
+
+    def flush(self):
+        if not self.original_stdout.closed:
+            self.original_stdout.flush()
+        if not self.logfile.closed:
+            self.logfile.flush()
 
 
-# Below is an example of how you could store questions 1–50 in a Python list of dictionaries.
+
+# Store your Exam/Quiz in a Python list of dictionaries so it can be used. Highlight or Ctrl+A on a PDF, ask chatGPT to provide you it in the below format (copy/paste a few from below to show it exactly what you need)
 # Each entry includes:
 #   question_number: The question index (1 to 50).
 #   question: The full text of the question stem.
@@ -2004,7 +2032,7 @@ practice_test_questions_step1 = [
         "question_number": 96,
         "question": (
             "A 57-year-old man with chronic low back pain comes to the office for a routine health maintenance "
-            "examination. The patient's last visit to the office was 2 years ago, and today he says he is "
+            "examination. The patient's last visit to the office was 2 years ago, and today he says he is " 
             "\"doing about the same,\" except for an unintentional 10-kg (22-lb) weight gain. He attributes the "
             "weight gain to inability to exercise because of his back pain, and he is now considering applying "
             "for disability benefits. He was evaluated by a back pain specialist 3 months ago and underwent an "
@@ -9091,19 +9119,12 @@ practice_test_questions_step3 = [
 ]
 
 ### ### ###
-#practice_test_questions_step1 = practice_test_questions_step1[-2:]  # limit to last 10 to speed up testing & make sure everything works
-#practice_test_questions_step2 = practice_test_questions_step2[-2:]
-#practice_test_questions_step3 = practice_test_questions_step3[-2:]
-#practice_test_questions = practice_test_questions[:50] #limit to 50
+#practice_test_questions_step1 = practice_test_questions_step1[:3]  # limit to speed up testing
+#practice_test_questions_step2 = practice_test_questions_step2[:3]
+#practice_test_questions_step3 = practice_test_questions_step3[:3]
 
 
 def call_ollama(prompt: str, model_name: str) -> str:
-    """
-    Sends the prompt to the Ollama API endpoint using the specified model
-    and returns the text from the 'response' field in the JSON object.
-    This uses a non-streaming request so we get a single JSON payload.
-    Timeout is increased to 180 seconds.
-    """
     url = "http://localhost:11434/api/generate"
 
     payload = {
@@ -9125,31 +9146,89 @@ def call_ollama(prompt: str, model_name: str) -> str:
     response_data = resp.json()
     return response_data.get("response", "")
 
-def call_openai(prompt: str, model_name: str) -> str:
-    """
-    Calls the OpenAI ChatCompletion endpoint using the given 'model_name'.
-    Returns the text from the assistant's message content.
-    The prompt is put into the user content of a single-turn chat. 
-    Timeout of 120 seconds. 
-    Make sure OPENAI_API_KEY is set in your environment 
-    or set openai.api_key = 'sk-...' in your code.
-    """
-    # You can read your API key from environment or set openai.api_key directly:
-    # openai.api_key = "YOUR_OPENAI_KEY"
-    # or rely on env var:
-    client = OpenAI()
-    if not client.api_key:
-        client.api_key = "YOUR_API_KEY_HERE"
+def call_openrouter(prompt: str, model_name: str) -> str:
+    url = "https://openrouter.ai/api/v1/chat/completions"
+    headers = {
+        "Authorization": "Bearer OPENROUTER_API_KEY_HERE",
+        "Content-Type": "application/json",
+        # Optional headers for rankings on openrouter.ai
+        # "HTTP-Referer": "<YOUR_SITE_URL>",
+        # "X-Title": "<YOUR_SITE_NAME>",
+    }
+    data = {
+        "model": model_name,
+        "messages": [{"role": "user", "content": prompt}],
+        "provider": {
+            "sort": "throughput"
+        }
+    }
 
-    if not client.api_key:
+    # Set temperature to 0.6 if 'deepseek' is in the model_name
+    if 'deepseek' in model_name.lower():
+        data["temperature"] = 0.6
+
+    try:
+        response = requests.post(url, headers=headers, json=data)
+        response.raise_for_status()
+        response_json = response.json()
+    except requests.exceptions.RequestException as e:
+        print(f"Error connecting to OpenRouter (model={model_name}): {e}")
+        return ""
+
+    # Extract the content from the first choice
+    choices = response_json.get("choices", [])
+    if not choices:
+        return ""
+    content = choices[0].get("message", {}).get("content", "")
+    return content
+
+def call_groq(prompt: str, model_name: str) -> str:
+    groq_api_key = "GROQ_API_KEY_HERE"
+    import openai
+    client = OpenAI(api_key=groq_api_key, base_url="https://api.groq.com/openai/v1")
+
+    # Prepare the parameters for the API call
+    params = {
+        "model": model_name,
+        "messages": [{"role": "user", "content": prompt}],
+    }
+
+    # Add temperature if 'deepseek' is in the model_name
+    if 'deepseek' in model_name.lower():
+        params["temperature"] = 0.6
+
+    try:
+        response = client.chat.completions.create(**params)
+    except Exception as e:
+        print(f"Error connecting to Groq (model={model_name}): {e}")
+        return ""
+
+    # Extract the text from the first choice
+    if not response.choices:
+        return ""
+    content = response.choices[0].message.content
+    return content or ""
+
+def call_openai(prompt: str, model_name: str, reasoning_effort: str) -> str:
+    import openai
+    # Set your OpenAI API key
+    openai.api_key = "OPENAI_API_KEY_HERE"
+    if not openai.api_key:
         print("No OpenAI API key found. Cannot call OpenAI model.")
         return ""
 
     try:
-        response = client.chat.completions.create(
-            model=model_name,
-            messages=[{"role": "user", "content": prompt}],
-        )
+        api_params = {
+            "model": model_name,
+            "messages": [{"role": "user", "content": prompt}],
+        }
+
+        # Include 'reasoning_effort' only for models that support it
+        if model_name.startswith('o3'):
+            api_params["reasoning_effort"] = reasoning_effort
+
+        response = openai.chat.completions.create(**api_params)
+
     except Exception as e:
         print(f"Error connecting to OpenAI (model={model_name}): {e}")
         return ""
@@ -9161,30 +9240,22 @@ def call_openai(prompt: str, model_name: str) -> str:
     return content or ""
 
 def call_claude(prompt: str, model_name: str) -> str:
-    """
-    Calls the Anthropic API to get a completion from Claude.
-    Returns the assistant's response text.
-    The prompt is sent as the user's message in a chat conversation.
-    """
     import anthropic
     import os
 
     # Get the API key from environment variable
-    anthropic_api_key = "YOUR_API_KEY_HERE"
+    anthropic_api_key = "ANTHROPIC_API_KEY_HERE"
     if not anthropic_api_key:
         print("No Anthropic API key found in ANTHROPIC_API_KEY environment variable.")
         return ""
 
-    # Initialize the client with your API key
     client = anthropic.Anthropic(api_key=anthropic_api_key)
 
-    # Construct the messages list
     messages = [
         {"role": "user", "content": prompt}
     ]
 
     try:
-        # Call the Anthropic API
         response = client.messages.create(
             model=model_name,
             max_tokens=1024,
@@ -9203,15 +9274,27 @@ def call_model_api(prompt: str, model_info: dict) -> str:
     """
     Chooses the appropriate API caller based on model_info["engine"].
     model_info should have at least:
-      {"model_name": "...", "engine": "ollama", "openai", or "claude"}
+      {"model_name": "...", "engine": "ollama", "openai", "claude", or "groq"}
     """
     engine = model_info.get("engine", "ollama")
     model_name = model_info["model_name"]
 
     if engine.lower() == "openai":
-        return call_openai(prompt, model_name)
+        match = re.match(r'(.*?)-(low|medium|high)$', model_name)
+        if match:
+            base_model_name = match.group(1)
+            reasoning_effort = match.group(2)
+        else:
+            base_model_name = model_name
+            reasoning_effort = 'medium'  # Default reasoning_effort
+
+        return call_openai(prompt, base_model_name, reasoning_effort)
+    elif engine.lower() == "openrouter":
+        return call_openrouter(prompt, model_name)
     elif engine.lower() == "claude":
         return call_claude(prompt, model_name)
+    elif engine.lower() == "groq":
+        return call_groq(prompt, model_name)
     else:
         # Default to Ollama
         return call_ollama(prompt, model_name)
@@ -9241,7 +9324,22 @@ def assign_colors_to_models(model_list):
     """
     Assign each model a distinct color from a set of 5 (rotating if more than 5 models).
     """
-    colors = [Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.MAGENTA]
+    colors = [
+        Fore.RED,
+        Fore.GREEN,
+        Fore.YELLOW,
+        Fore.BLUE,
+        Fore.MAGENTA,
+        Fore.CYAN,
+        Fore.WHITE,
+        Fore.LIGHTBLACK_EX,
+        Fore.LIGHTRED_EX,
+        Fore.LIGHTGREEN_EX,
+        Fore.LIGHTYELLOW_EX,
+        Fore.LIGHTBLUE_EX,
+        Fore.LIGHTMAGENTA_EX,
+        Fore.LIGHTCYAN_EX
+    ]
     for i, model_info in enumerate(model_list):
         model_info["color"] = colors[i % len(colors)]
 
@@ -9267,7 +9365,6 @@ def test_single_model(model_info: dict, practice_test_questions, practice_test_n
             f"{letter}. {desc}" for letter, desc in q["choices"].items()
         )
 
-        # Build prompt
         prompt = (
             "You are required to select the best answer to the question. "
             "Other options may be partially correct, but there is only ONE BEST answer. "
@@ -9327,10 +9424,7 @@ def test_multiple_models(model_list, practice_tests):
       2) Indented rows underneath for each practice test's details
     """
 
-    # First assign colors to each model in the list
     assign_colors_to_models(model_list)
-
-    # all_results is a dict to store all results
     all_results = {}
 
     # Run tests
@@ -9405,16 +9499,11 @@ def test_multiple_models(model_list, practice_tests):
     # Sort the models by avg_percentage (descending), then avg_time_across_tests (ascending)
     model_summary_list.sort(key=lambda x: (-x["avg_percentage"], x["avg_time_across_tests"]))
 
-    # Build a final summary with overall stats plus sub-rows for each practice test
-    print("\n\n================================= STEP 1-3 PRACTICE TEST AI MODEL PERFORMANCE =================================")
-
-    # Table header for overall model row
-    # We'll print the sub-rows (each practice test) underneath with indentation
-            # Print one row for the model's overall stats
+    print("\n\n=================================== STEP 1-3 PRACTICE TEST AI MODEL PERFORMANCE ===================================")
     
     print(
         Style.BRIGHT +
-        "{:<27}{:<10} {:>10} {:>10}   {:<8}                 {:>17}".format(
+        "{:<43}{:<10} {:>10} {:>10}   {:<8}                 {:>17}".format(
             "Model Name",
             "Engine",
             "Avg %Corr",
@@ -9424,7 +9513,7 @@ def test_multiple_models(model_list, practice_tests):
         ) +
         Style.RESET_ALL
     )
-    print("-" * 110)
+    print("-" * 118)
 
     # For each model (already sorted)
     for data in model_summary_list:
@@ -9439,14 +9528,12 @@ def test_multiple_models(model_list, practice_tests):
         avg_percentage = data["avg_percentage"]
         avg_time_across_tests = data["avg_time_across_tests"]
         avg_time_per_q = data["avg_time_per_q"]
-
-        # Compute avg_time_per_q in seconds, format as 3-digit number with leading zeros
         avg_time_per_q_secs = int(round(avg_time_per_q))
         avg_time_per_q_str = f"{avg_time_per_q_secs}s"
 
         # Print one row for the model's overall stats
         print(
-            f"{Style.BRIGHT}{colored_model_name:<35} {Style.BRIGHT}{engine:<10}"
+            f"{Style.BRIGHT}{colored_model_name:<51} {Style.BRIGHT}{engine:<10}"
             f"{Style.BRIGHT}{avg_percentage:>9.1f}%"
             f"{Style.BRIGHT}   {total_correct:>4}/{total_questions:<4}"
             f"{Style.BRIGHT}   {format_time(avg_time_across_tests):>17}"
@@ -9461,13 +9548,11 @@ def test_multiple_models(model_list, practice_tests):
             pc = r["percentage_correct"]
             ttime = r["time_taken"]
             ttime_q = r["time_per_question"]
-
-            # Compute time per question in seconds, format as 3-digit number with leading zeros
             ttime_q_secs = int(round(ttime_q))
             ttime_q_str = f"{ttime_q_secs}s"
 
             print(
-                "  {:<33}  {:>9.1f}%   {:>4}/{:<4}   {:>17}   {:>7}".format(
+                "  {:<49}  {:>9.1f}%   {:>4}/{:<4}   {:>17}   {:>7}".format(
                     practice_test_name,
                     pc,
                     corr,
@@ -9477,42 +9562,79 @@ def test_multiple_models(model_list, practice_tests):
                 )
             )
 
-        print("-" * 110)  # separator after each model block
+        print("-" * 118)
 
 
 if __name__ == "__main__":
-    # Example usage: define two separate lists or a combined list of models.
-    # You do not HAVE to provide openAI models. If you omit them, only the Ollama
-    # ones are tested (must have Ollama installed & running, use 'ollama list' to see the model names you have installed).
-    # Any model here will appear in the final ranking.
+    # You do not HAVE to provide openAI models, API keys, etc
+    # Any model un-commented here will be run & appear in the final ranking
 
-# Define your practice tests
-    practice_tests = [
-        {"name": "Step 1", "questions": practice_test_questions_step1},
-        {"name": "Step 2", "questions": practice_test_questions_step2},
-        {"name": "Step 3", "questions": practice_test_questions_step3},
-    ]
+    # Generate filename based on current time including hours and minutes
+    from datetime import datetime
+    filename = datetime.now().strftime('results%Y-%m-%d-%H-%M.txt')
 
-    # Define your models to test
-    models_to_test = [
-        {"model_name": "gpt-4o", "engine": "openai"},
-        {"model_name": "gpt-4o-mini", "engine": "openai"},
-        {"model_name": "o1-mini", "engine": "openai"},
-        {"model_name": "o1-preview", "engine": "openai"},
+    # Open the log file with UTF-8 encoding
+    with open(filename, 'w', encoding='utf-8') as logfile:
+        original_stdout = sys.stdout  # Save the original stdout
 
-        {"model_name": "claude-3-5-haiku-latest", "engine": "claude"},
-        {"model_name": "claude-3-5-sonnet-20241022", "engine": "claude"},
-        {"model_name": "claude-3-opus-latest", "engine": "claude"},
+        # Redirect stdout to the Tee instance
+        sys.stdout = Tee(original_stdout, logfile)
 
-        #{"model_name": "deepseek-r1:1.5b-qwen-distill-fp16", "engine": "ollama"},
-        #{"model_name": "mistral:7b-instruct-v0.3-q6_K", "engine": "ollama"},
-        #{"model_name": "falcon3:7b-instruct-q8_0", "engine": "ollama"},
-        #{"model_name": "falcon3:10b-instruct-q4_K_M", "engine": "ollama"},
-        #{"model_name": "command-r7b:7b-12-2024-q4_K_M", "engine": "ollama"},
-        #{"model_name": "openchat:7b-v3.5-1210-q8_0", "engine": "ollama"},
-        #{"model_name": "llama3.1:8b-instruct-q8_0", "engine": "ollama"},
-        #{"model_name": "deepseek-r1:8b-llama-distill-q4_K_M", "engine": "ollama"},
-        #{"model_name": "deepseek-r1:14b-qwen-distill-q4_K_M", "engine": "ollama"},
-    ]
 
-test_multiple_models(models_to_test, practice_tests)
+        practice_tests = [
+            {"name": "Step 1", "questions": practice_test_questions_step1},
+            {"name": "Step 2", "questions": practice_test_questions_step2},
+            {"name": "Step 3", "questions": practice_test_questions_step3},
+        ]
+
+        models_to_test = [
+
+            ### Open Source APIs
+            {"model_name": "mistralai/mistral-large-2411", "engine": "openrouter"},
+            {"model_name": "qwen/qwen-max", "engine": "openrouter"},
+            {"model_name": "meta-llama/llama-3.1-405b-instruct", "engine": "openrouter"},
+            {"model_name": "deepseek-r1-distill-llama-70b", "engine": "groq"},
+            {"model_name": "mistralai/mistral-small-24b-instruct-2501", "engine": "openrouter"},
+            {"model_name": "llama-3.3-70b-versatile", "engine": "groq"},
+            {"model_name": "deepseek/deepseek-r1", "engine": "openrouter"},
+
+            ### OpenAI
+            {"model_name": "gpt-4o", "engine": "openai"},
+            {"model_name": "gpt-4o-mini", "engine": "openai"},
+            {"model_name": "o1-mini", "engine": "openai"},
+            {"model_name": "o1-preview", "engine": "openai"},
+            {"model_name": "o3-mini-low", "engine": "openai"},
+            {"model_name": "o3-mini-medium", "engine": "openai"},
+            {"model_name": "o3-mini-high", "engine": "openai"},
+
+            ### Claude / Anthropic
+            {"model_name": "claude-3-5-haiku-latest", "engine": "claude"},
+            {"model_name": "claude-3-5-sonnet-20241022", "engine": "claude"},
+            {"model_name": "claude-3-opus-latest", "engine": "claude"},
+
+            ### Ollama (local)
+            #{"model_name": "mistral-small:24b-instruct-2501-q8_0", "engine": "ollama"},
+            #{"model_name": "mistral-small:24b-instruct-2501-q4_K_M", "engine": "ollama"},
+            #{"model_name": "mistral-small:22b-instruct-2409-q3_K_S", "engine": "ollama"},
+            #{"model_name": "huihui_ai/deepseek-r1-abliterated:14b-qwen-distill-q4_K_M", "engine": "ollama"},
+            #{"model_name": "deepseek-r1:14b-qwen-distill-q4_K_M", "engine": "ollama"},
+            #{"model_name": "tulu3:8B-Q8_0", "engine": "ollama"},
+            #{"model_name": "olmo2:13b-1124-instruct-q4_K_M", "engine": "ollama"},
+            #{"model_name": "olmo2:7b-1124-instruct-q8_0", "engine": "ollama"},
+            #{"model_name": "tulu3:8b-q4_K_M", "engine": "ollama"},
+            #{"model_name": "deepseek-r1:1.5b-qwen-distill-fp16", "engine": "ollama"},
+            #{"model_name": "mistral:7b-instruct-v0.3-q6_K", "engine": "ollama"},
+            #{"model_name": "falcon3:7b-instruct-q8_0", "engine": "ollama"},
+            #{"model_name": "falcon3:10b-instruct-q4_K_M", "engine": "ollama"},
+            #{"model_name": "command-r7b:7b-12-2024-q4_K_M", "engine": "ollama"},
+            #{"model_name": "openchat:7b-v3.5-1210-q8_0", "engine": "ollama"},
+            #{"model_name": "llama3.1:8b-instruct-q8_0", "engine": "ollama"},
+            #{"model_name": "deepseek-r1:8b-llama-distill-q4_K_M", "engine": "ollama"},
+            #{"model_name": "deepseek-r1:14b-qwen-distill-q4_K_M", "engine": "ollama"},
+        ]
+
+        try:
+            test_multiple_models(models_to_test, practice_tests)
+        finally:
+            # Restore the original stdout
+            sys.stdout = original_stdout
