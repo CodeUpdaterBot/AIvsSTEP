@@ -1,6 +1,5 @@
 # AI vs STEP
 A Python program that uses ****only the text**** from the the 2024 STEP-Practice Exams 1-3 and runs it through OpenAI, Claude, and open-source Ollama models to see how each scores and which is the best overall.
-- Practice STEP 1: https://www.usmle.org/sites/default/files/2021-10/Step_1_Sample_Items.pdf
 
 ![image](https://github.com/user-attachments/assets/fa5cde1d-3c89-4f77-8ade-6cb448eede32)
 
@@ -54,4 +53,7 @@ Run with: python main.py (see imports at the top of main.py, you might have to p
 - You can copy/select the text in a PDF and use ChatGPT to provide you the test in a format matching the one provided
 
 Note: From what I count in Step 1, there are 5 images that actually require interpretation to get it correct, meaning the best score possible is 95.8% (unless it guesses lucky on one of those). This runs on only the text of the questions.
+
+Practice STEP 1: https://www.usmle.org/sites/default/files/2021-10/Step_1_Sample_Items.pdf
+Step 2 & 3 are from the same source
 
