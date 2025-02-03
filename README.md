@@ -5,7 +5,7 @@ A Python program that uses ****only the text**** from the the 2024 STEP-Practice
 
 Models used (2-2-2025):
 
-    mistralai/mistral-large-2411, qwen/qwen-max, meta-llama/llama-3.1-405b-instruct, deepseek-r1-distill-llama-70b, mistralai/mistral-small-24b-instruct-2501, llama-3.3-70b-versatile, deepseek/deepseek-r1, gpt-4o, gpt-4o-mini, o1-mini, o1-preview, o3-mini-low, o3-mini-medium, o3-mini-high, claude-3-5-haiku-latest, claude-3-5-sonnet-20241022, claude-3-opus-latest]
+    mistralai/mistral-large-2411, qwen/qwen-max, meta-llama/llama-3.1-405b-instruct, deepseek-r1-distill-llama-70b, mistralai/mistral-small-24b-instruct-2501, deepseek/deepseek-r1, gpt-4o, gpt-4o-mini, o1-mini, o1-preview, o3-mini-low, o3-mini-medium, o3-mini-high, claude-3-5-haiku-latest, claude-3-5-sonnet-20241022, claude-3-opus-latest]
 
 Choose which models to use at the bottom (uncomment to run):
 
