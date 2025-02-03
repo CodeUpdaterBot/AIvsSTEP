@@ -55,5 +55,5 @@ Run with: python main.py (see imports at the top of main.py, you might have to p
 Note: From what I count in Step 1, there are 5 images that actually require interpretation to get it correct, meaning the best score possible is 95.8% (unless it guesses lucky on one of those). This runs on only the text of the questions.
 
 Practice STEP 1: https://www.usmle.org/sites/default/files/2021-10/Step_1_Sample_Items.pdf
-Step 2 & 3 are from the same source
+Step 2 & 3 are from the same source, see them in the .py file
 
