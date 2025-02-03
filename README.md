@@ -1,5 +1,5 @@
 # AI vs STEP
-A Python program that uses ****only the text**** from the the 2024 STEP-Practice Exams 1-3 and runs it through OpenAI, Claude, and open-source Ollama models to see how each scores and which is the best overall.
+A Python program that uses ****only the text**** from the the 2024 STEP-Practice Exams 1-3 and runs it through OpenAI, Claude, Groq, OpenRouter, and open-source Ollama models to see how each scores and which is the best overall.
 
 ![image](https://github.com/user-attachments/assets/fa5cde1d-3c89-4f77-8ade-6cb448eede32)
 
