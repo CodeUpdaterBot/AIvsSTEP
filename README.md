@@ -53,5 +53,5 @@ Run with: python main.py (see imports at the top of main.py, you might have to p
 **Use this on any test** by replacing the test data at the top with your own, that's it! Must be multiple-choice.
 - You can copy/select the text in a PDF and use ChatGPT to provide you the test in a format matching the one provided
 
-Note: From what I count, there are 5 images that actually require interpretation to get it correct, meaning the best score possible is 95.8% (unless it guesses lucky on one of those).
+Note: From what I count in Step 1, there are 5 images that actually require interpretation to get it correct, meaning the best score possible is 95.8% (unless it guesses lucky on one of those). This runs on only the text of the questions.
 
