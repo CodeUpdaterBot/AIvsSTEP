@@ -62,7 +62,7 @@ cd to the folder where the main.py file is stored and run
 
 ## **To use OpenRouter (any LLM/Model):**
 
- You must set the Bearer Authroization to your OpenRouter API Key
+ You must set the Bearer Authorization to your OpenRouter API Key
 
 ## **To use Ollama models:**
 
